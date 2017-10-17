@@ -1,0 +1,162 @@
+{include file="/tpl/header"}
+<!--top end-->
+<link rel="stylesheet" type="text/css" href="/static/index/home/css/jb_font-awesome.css">
+<script type="text/javascript" src="/static/index/home/js/imageuploadpreview.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+<div id="main">
+    <div class="main_box">
+        <div class="assets_content  bg_w" id="safebox" style="margin: 0 auto;"><h1>
+            用户中心</h1>
+            <div class="safe_center clear">
+                <div style="float:left; margin-left:20px;">
+                    <div class="sc_level">
+                        <div class="sc_level_4">
+                            <img id="member_logo_change" style="width:102px; height:102px;cursor:pointer;" src="{$logo}">
+                        </div>
+                        <form action="{:url('member/change_logo')}" id="member_logo_form" method="post" enctype="multipart/form-data">
+                            <input type="file" name="logo" id="member_logo_input" style="display: none;">
+                        </form>
+                        <!--<div class="sc_level_info"></div>-->
+                    </div>
+                    <dl>
+                        <dt>ID：<span>{$online_user.uid?=$online_user.uid}</span></dt>
+                        <dd>姓名：{$auth.real_name | default='未认证'}</dd>
+                        <dd>电话：{$online_user.name?=$online_user.name}</dd>
+                    </dl>
+                </div>
+                <div style="float:left; margin-left:170px;">
+                    <dl style=" padding-top:0px !important;"><span style="font-size:16px;">人民币信息</span>
+                        <dt>可用：￥{$online_user.can | default=0.0000}</span></dt>
+                        <dd>冻结：￥{$online_user.block | default=0.0000}</dd>
+                        <dd>总资产：￥{$online_user.can + $online_user.block}</dd>
+                    </dl>
+                </div>
+            </div>
+            <ul class="sc_statu">
+                <li>
+                    {if $auth.status != 2}
+                    <em class="sc_statu_type_1_1"></em>
+                    <dl>
+                        <dt>实名认证</dt>
+                        <dd class="nopass">{$auth_status_str}<a href="{:url('safe/auth')}" id="check_member_auth" auth_status="{$auth.status?=$auth.status}">点击认证</a></dd>
+                    </dl>
+                    {else}
+                    <em class="sc_statu_type_1"></em>
+                    <dl>
+                        <dt>实名认证</dt>
+                        <dd class="alpass">已认证<a href="{:url('safe/ytg_auth')}">查看</a></dd>
+                    </dl>
+                    {/if}
+                </li>
+                <!--<li>
+                    <if condition="$u_info['phone']">
+                        <em class="sc_statu_type_3"></em>
+                        <dl>
+                            <dt>绑定手机</dt>
+                            <dd class="alpass">已认证 <a href="{:url('User/updateMassage')}">查看</a></dd>
+                        </dl>
+                        <else/>
+                        <em class="sc_statu_type_3_1"></em>
+                        <dl>
+                            <dt>绑定手机</dt>
+                            <dd class="nopass">未认证 <a href="{:url('ModifyMember/modify')}">点击绑定</a></dd>
+                        </dl>
+                    </if>
+
+                </li>-->
+                <li>
+                    <em class="sc_statu_type_2"></em>
+                    <dl>
+                        <dt>账户资产</dt>
+                        <dd class="alpass">已认证<a href="{:url('safe/center')}">点击进入</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <div class="sc_info_list" id="sc_info_list">
+                <dl style="background-color: rgb(249, 249, 249);">
+                    <dt>登录密码</dt>
+                    <dd><p>登录{$config.title}账户时需要输入的密码</p></dd>
+                    <dd>
+                        <div class="changepw"><a href="{:url('User/updatePassword')}">修改登录密码</a></div>
+                    </dd>
+                </dl>
+                <dl style="background-color: rgb(255, 255, 255);">
+                    <dt>交易密码</dt>
+                    <dd><p>在{$config.title}进行交易时需要输入的密码</p></dd>
+                    <dd>
+                        <div class="changepw"><a href="{:url('User/updatePassword')}">修改交易密码</a></div>
+                    </dd>
+                </dl>
+                <!--<dl style="background-color: rgb(255, 255, 255);">
+                    <dt>手机绑定</dt>
+                    <if condition="$u_info['phone']">
+                        <dd>
+                            <p>
+                                您已成功绑定手机
+                            </p>
+                        </dd>
+                        <dd>
+                            <div class="changepw">
+                                <a href="{:url('User/updateMassage')}">查看</a>
+                            </div>
+                        </dd>
+                        <else/>
+                        <dd>
+                            <p>
+                                未绑定手机，为了您的资金安全，建议您立即绑定
+                            </p>
+                        </dd>
+                        <dd>
+                            <div class="changepw">
+                                <a href="{:url('ModifyMember/modify')}">绑定</a>
+                            </div>
+                        </dd>
+                    </if>
+                </dl>-->
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<script type="text/javascript">
+    $('#check_member_auth').click(function () {
+        var auth_status = $(this).attr('auth_status');
+        if (!auth_status){
+            return true;
+        }
+        if (auth_status == 1){
+            $(this).v_error_tips('你提交的信息已在认证中，请耐心等待');
+            return false
+        }
+    });
+    $('#member_logo_change').click(function () {
+        $('#member_logo_input').trigger('click');
+    });
+    $('#member_logo_input').uploadPreview({
+        Img: 'member_logo_change',
+        Width: 100,
+        Height: 80,
+        ImgType: ['gif', 'jpeg', 'jpg', 'bmp', 'png'],
+        Callback: function () {
+            $('#member_logo_form').submit();
+        }
+    });
+    $(".menu11").addClass("uc-current");
+
+    function showTips(id, msg) {
+        var tips = layer.tips(msg, id, {
+            tips: [1, '#fff8db'],
+            area: ['400px', '35px']
+        });
+        $(id).on('mouseout', function () {
+            layer.close(tips);
+        });
+    }
+</script>
+{include file="/tpl/footer"}
+{include file='/tpl/msg'}

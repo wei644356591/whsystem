@@ -1,0 +1,56 @@
+{include file='/tpl/head'}
+{include file='/tpl/top'}
+<!--菜单-->
+<div class="layout_left_menu">
+    <ul id="menu">
+        <li class="childUlLi">
+            <a href="main.html" target="menuFrame"><i class="glyphicon glyphicon-star"></i>后台用户管理</a>
+            <ul>
+                <li><a href="{:url('user/add')}" target="menuFrame"><i class="glyphicon glyphicon-share-alt"></i>后台用户添加</a></li>
+                <li><a href="{:url('user/lists')}" target="menuFrame"><i class="glyphicon glyphicon-share-alt"></i>后台用户列表</a></li>
+            </ul>
+        </li>
+        <li class="childUlLi">
+            <a href="member.html" target="menuFrame"> <i class="glyphicon glyphicon-user"></i>前台用户管理</a>
+            <ul>
+                <li><a href="{:url('member/auth')}" target="menuFrame"><i class="glyphicon glyphicon-share-alt"></i>实名认证</a>
+                </li>
+                <li><a href="{:url('member/lists')}" target="menuFrame"><i class="glyphicon glyphicon-share-alt"></i>用户列表</a>
+                </li>
+            </ul>
+        </li>
+        <li class="childUlLi">
+            <a href="user.html" target="menuFrame"> <i class="glyphicon glyphicon-tint"></i>金融管理</a>
+            <ul>
+                <li><a href="{:url('information/set_trend')}" target="menuFrame"><i class="glyphicon glyphicon-share-alt"></i>数据设置</a></li>
+                <li><a href="{:url('information/get_info')}" target="menuFrame"><i class="glyphicon glyphicon-share-alt"></i>数据采集</a></li>
+            </ul>
+        </li>
+        <li class="childUlLi">
+            <a href="role.html" target="menuFrame"> <i class="glyphicon glyphicon-usd"></i>资金管理</a>
+            <ul>
+                <li><a href="{:url('fund/charge')}" target="menuFrame"><i class="glyphicon glyphicon-share-alt"></i>充值设置</a></li>
+                <li><a href="{:url('fund/bank')}" target="menuFrame"><i class="glyphicon glyphicon-share-alt"></i>银行设置</a></li>
+                <li><a href="{:url('fund/consume')}" target="menuFrame"><i class="glyphicon glyphicon-share-alt"></i>提现设置</a></li>
+            </ul>
+        </li>
+        <li class="childUlLi">
+            <a href="#"> <i class="glyphicon glyphicon-ruble"></i>交易管理</a>
+            <ul>
+                <li><a href="{:url('jymanage/cztx_action')}" target="menuFrame"><i class="glyphicon glyphicon-share-alt"></i>充值提现</a></li>
+                <li><a href="{:url('jymanage/jy_action')}" target="menuFrame"><i class="glyphicon glyphicon-share-alt"></i>交易记录</a>
+                </li>
+            </ul>
+        </li>
+        <li class="childUlLi">
+            <a href="#"> <i class="glyphicon glyphicon-wrench"></i>系统管理</a>
+            <ul>
+                <li><a href="{:url('tools/set_menu')}" target="menuFrame"><i class="glyphicon glyphicon-share-alt"></i>设置菜单</a></li>
+                <li><a href="{:url('tools/set_content')}" target="menuFrame"><i class="glyphicon glyphicon-share-alt"></i>设置内容</a></li>
+                <li><a href="{:url('tools/set_bigimg')}" target="menuFrame"><i class="glyphicon glyphicon-share-alt"></i>设置图片</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!--菜单-->
+{include file='/tpl/bottom'}

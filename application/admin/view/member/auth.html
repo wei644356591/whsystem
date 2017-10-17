@@ -1,0 +1,168 @@
+{include file='/tpl/head'}
+<style type="text/css">
+    .ytg {
+        color: green;
+        font-size: 21px;
+        margin-left: 1em;
+    }
+
+    .wtg {
+        color: indianred;
+        font-size: 21px;
+        margin-left: 1em;
+    }
+
+    .drz {
+        color: deepskyblue;
+        font-size: 21px;
+    }
+    .shenhe{
+        cursor: pointer;
+    }
+</style>
+<span id="sh-drz" class="glyphicon glyphicon-question-sign drz shenhe">查看待认证</span>
+<span id="sh-wtg" class="glyphicon glyphicon-remove-sign wtg shenhe">查看未通过</span>
+<span id="sh-ytg" class="glyphicon glyphicon-ok-sign ytg shenhe">查看已通过</span>
+<form class="form-inline" action="{:url('member/auth')}" method="post" id="sub_search_form" role="form" style="margin-top: 1em">
+    <div class="form-group">
+        <label class="sr-only" for="name">名称</label>
+        <input type="text" name="member_user" class="form-control" id="name" placeholder="请输入昵称" v-data="require">
+    </div>
+    <button type="button" class="btn btn-default sub_btn_search">搜索</button>
+</form>
+<table class="table table-hover">
+    <tr>
+        <th>用户名</th>
+        <th>提交认证时间</th>
+        <th>身份证正面</th>
+        <th>身份证反面</th>
+        <th>手持身份证</th>
+        <th>状态</th>
+        <th>操作</th>
+    </tr>
+    {foreach $data as $row}
+    <tr>
+        <td>
+            <input type="hidden" name="auth_id" value="{$row.id}">
+            {$row.member_user}
+        </td>
+        <td>
+            {$row.auth_time|date="Y-m-d H:i:s",###}
+        </td>
+        <td id="identity_zm_td">
+            <img id="identity_zm" src="{$row.identity_zm}" height="50" class="shenhe">
+        </td>
+        <td id="identity_fm_td">
+            <img id="identity_fm" src="{$row.identity_fm}" height="50" class="shenhe">
+        </td>
+        <td id="identity_sc_td">
+            <img id="identity_sc" src="{$row.identity_sc}" height="50" class="shenhe">
+        </td>
+        <td>
+            <span class="glyphicon glyphicon-{$status_list[$row.id]}"></span>
+        </td>
+        <td>
+            {if $row.status eq 1}
+            <a href="#" class="btn btn-success shenhe-tg">审核通过</a>
+            <a href="#" class="btn btn-danger shenhe-wtg">审核不通过</a>
+            {elseif $row.status eq 2}
+            <a href="#" class="btn btn-success disabled">已通过</a>
+            {else}
+            <a href="#" class="btn btn-danger disabled">未通过</a>
+            {/if}
+        </td>
+    </tr>
+    {/foreach}
+</table>
+<div>
+    {$data->render()}
+</div>
+{include file='/tpl/msg'}
+<script type="text/javascript">
+    $('.shenhe-tg').click(function () {
+        if (!confirm('是否确定审核为通过')){
+            return false;
+        }
+        var id = $('input[name="auth_id"]').val();
+        if (!id){
+            return false;
+        }
+        $.get("{:url('member/do_auth')}",{status:2,id:id},function (result) {
+            if (!result.status){
+                $().wh_error_notice(result.error_desc);
+                return false;
+            }
+            $().wh_succ_notice(result.succ_desc,function () {
+                window.location.reload();
+            });
+
+        },'json');
+    });
+    $('.shenhe-wtg').click(function () {
+        if (!confirm('是否确定审核为未通过')){
+            return false;
+        }
+        var id = $('input[name="auth_id"]').val();
+        if (!id){
+            return false;
+        }
+        $.get("{:url('member/do_auth')}",{status:3,id:id},function (result) {
+            if (!result.status){
+                $().wh_error_notice(result.error_desc);
+                return false;
+            }
+            $().wh_succ_notice(result.succ_desc,function () {
+                window.location.reload();
+            });
+
+        },'json');
+    });
+    $('#identity_zm').click(function () {
+        layer.photos({
+            photos: '#identity_zm_td',
+            closeBtn: 1,
+            shade: 0,
+            isOutAnim: false,
+            anim: 5,
+            cancel: function (index, layero) {
+                layer.close(index);
+            }
+        });
+    });
+    $('#identity_fm').click(function () {
+        layer.photos({
+            photos: '#identity_fm_td',
+            closeBtn: 1,
+            shade: 0,
+            isOutAnim: false,
+            anim: 5,
+            cancel: function (index, layero) {
+                layer.close(index);
+            }
+        });
+    });
+    $('#identity_sc').click(function () {
+        layer.photos({
+            photos: '#identity_sc_td',
+            closeBtn: 1,
+            shade: 0,
+            isOutAnim: false,
+            anim: 5,
+            cancel: function (index, layero) {
+                layer.close(index);
+            }
+        });
+    });
+    $('#sh-drz').click(function () {
+        window.location.href = '/admin/member/auth/status/1';
+    });
+    $('#sh-ytg').click(function () {
+        window.location.href = '/admin/member/auth/status/2';
+    });
+    $('#sh-wtg').click(function () {
+        window.location.href = '/admin/member/auth/status/3';
+    });
+    $('.sub_btn_search').click(function () {
+        $('#sub_search_form').v_validate();
+    });
+</script>

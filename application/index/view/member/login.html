@@ -1,0 +1,52 @@
+{include file="/tpl/header"}
+<!--top end-->
+<style>
+    .top{ border-bottom:0; padding:10px 0;}
+    #main{ padding:0;}
+    .login_tongyi{ width:1000px; margin:0 auto; border:1px solid #ddd;}
+    .ybc_footer{ text-align:center; color:#999; margin:30px 0;}
+</style>
+<div id="main">
+    <div class="login_tongyi">
+        <h2 class="user">用户登录</h2>
+        <!--<form id="form" method="post" action="{:url('Login/checkLog')}" >  -->
+        <form class="form-horizontal m-t" id="signupForm" method="post"  action="{:url('member/login')}">
+            <ul class="login">
+                <li><label for="email" class="youxiang">手机号：</label>
+                    <input name="name" id="email" class="" i="" type="text" v-data="phone"><!-- autocomplete="off"/>-->
+                </li>
+                <li><label for="pwd" class="youxiang">密码：</label>
+                    <input name="pass" id="pwd" class="" i="" type="password" v-data="require"><!-- autocomplete="off"/>-->
+                </li>
+                <li><label for="pwd" class="youxiang">验证码：</label>
+                    <input name="captcha" id="captcha" class="" i="" type="text" v-data="require"><!-- autocomplete="off"/>-->
+                    <img id="captcha_img" src="{:captcha_src()}">
+                </li>
+                <li style=" width:332px; line-height:22px; padding-left:350px;">
+		<span class="note" id="birthmsg" style="color:red; margin:0;">
+
+		</span>
+                </li>
+                <li style="margin-bottom:15px;"><label class="youxiang">&nbsp;</label><input class="denglu" id="member_login_btn" value="登录" style="border:0;" type="button"></li>
+                <li class="forget" style="margin-bottom:0px;">
+                    <label class="youxiang">&nbsp;</label>
+                    <a href="{:url('member/find_pass')}">忘记密码？</a>
+                    <span style="margin-left:118px;">没有{$config.title|default="外汇网"}账号？<a href="{:url('member/register')}" class="zhuce">注册一个</a></span>
+                </li>
+                <li class="forget" style=" height:30px; line-height:30px;">
+                    <label class="youxiang">&nbsp;</label>
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
+{include file='/tpl/msg'}
+<script type="text/javascript">
+    $('#member_login_btn').click(function () {
+        $('#signupForm').v_validate('form');
+    });
+    $('#captcha_img').click(function () {
+        $('#captcha_img').attr('src', "{:captcha_src()}");
+    });
+</script>
+{include file="/tpl/footer"}

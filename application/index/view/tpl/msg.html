@@ -1,0 +1,10 @@
+<script type="text/javascript">
+    var succ_notice = "{$Think.session.succ_notice?=$Think.session.succ_notice}";
+    var error_notice = "{$Think.session.error_notice?=$Think.session.error_notice}";
+    if (succ_notice){
+        $().wh_succ_notice(succ_notice);
+    }
+    if (error_notice){
+        $().wh_error_notice(error_notice);
+    }
+</script>

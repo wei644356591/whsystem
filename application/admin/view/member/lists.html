@@ -1,0 +1,45 @@
+{include file='/tpl/head'}
+<style type="text/css">
+    .green{
+        color: green;
+    }
+    .red{
+        color: indianred;
+    }
+</style>
+<table class="table table-hover">
+    <tr>
+        <th>用户名</th>
+        <th>注册时间</th>
+        <th>登陆时间</th>
+        <th>剩余金额</th>
+        <th>状态</th>
+        <th>操作</th>
+    </tr>
+    {foreach $data as $row}
+    <tr>
+        <td>
+            {$row.name}
+        </td>
+        <td>
+            {$row.reg_time|date="Y-m-d H:i:s",###}
+        </td>
+        <td>
+            {$row.log_time|date="Y-m-d H:i:s",###}
+        </td>
+        <td>
+            ￥{$row.money}
+        </td>
+        <td>
+            <span class="glyphicon glyphicon-{$row.status == 1 ? 'ok green':'remove red'}"></span>
+        </td>
+        <td>
+            <a href="{:url('member/edit',['id'=>$row.id])}" onclick="var msg = '{$row.status == 2 ? '启用': '禁用' }';if (!confirm('是否'+msg+'该用户'))return false;" type="button" class="glyphicon glyphicon-pencil"></a>
+        </td>
+    </tr>
+    {/foreach}
+</table>
+<div>
+    {$data->render()}
+</div>
+{include file='/tpl/msg'}

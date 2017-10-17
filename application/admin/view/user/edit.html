@@ -1,0 +1,38 @@
+{include file='/tpl/head'}
+<div class="div_from_aoto" style="margin: 0 auto;width: 500px;">
+    <form action="{:url('user/edit')}" method="post" id="user_edit_form">
+        <input type="hidden" name="id" value="{$data.id}">
+        <div class="control-group">
+            <label class="laber_from">您的用户名(必填):</label>
+            <div class="form-group">
+                <input class="form-control" name="name" type=text value="{$data.name}" readonly>
+                <P class=help-block></P></div>
+        </div>
+        <div class="control-group">
+            <label class="laber_from">新的密码(必填):</label>
+            <div class="form-group">
+                <input class="form-control" name="password" type=text placeholder="请输入密码" v-min="3" v-max="16">
+                <P class=help-block></P></div>
+        </div>
+        <div class="control-group">
+            <label class="laber_from">新的确认密码(必填):</label>
+            <div class="form-group">
+                <input class="form-control" name="password1" type=text placeholder="请输入确认密码" v-min="3" v-max="16">
+                <P class=help-block></P></div>
+        </div>
+
+        <div class="control-group">
+            <label class="laber_from"></label>
+            <div class="form-group">
+                <button type="button" onclick="window.location.reload()" class="btn btn-primary" style="width:120px;">重置</button>
+                <button type="button" id="sub_btn_form" class="btn btn-success" style="width:120px;">确认</button>
+            </div>
+        </div>
+    </form>
+</div>
+{include file='/tpl/msg'}
+<script type="text/javascript">
+    $('#sub_btn_form').click(function () {
+        $('#user_edit_form').v_validate();
+    });
+</script>

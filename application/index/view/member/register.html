@@ -1,0 +1,369 @@
+{include file="/tpl/header"}
+<!--top end-->
+
+<style type="text/css">
+    .ybc_header {
+        width: 1000px;
+        height: 70px;
+        margin: 10px auto;
+    }
+
+    .main {
+        width: 100%;
+        background-color: #fff;
+        min-height: 550px;
+        _height: 550px;
+        font-size: 12px;
+        color: #666;
+        font-family: "微软雅黑";
+    }
+
+    .main_box {
+        width: 1000px;
+        margin: 0 auto;
+        min-height: 400px;
+        padding: 30px;
+        padding-top: 0;
+        border: 1px solid #e1e1df;
+        background-color: #fbfaf8;
+        margin-left: 100px;
+    }
+
+    .warning {
+        line-height: 24px;
+        margin-bottom: 10px;
+        color: #333;
+        font-size: 14px;
+        word-break: break-all;
+        margin-top: 0px;
+
+    }
+
+    .warning h2 {
+        height: 60px;
+        line-height: 60px;
+        border-bottom: 1px solid #e1e1df;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+        font-weight: normal;
+    }
+
+    .warning h3 {
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+        margin-top: 20px;
+        color: #333;
+        font-weight: normal;
+    }
+
+    .ybc_label {
+        width: 380px;
+        height: 30px;
+        line-height: 30px;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .ybc_user2 {
+        margin-bottom: 20px;
+        margin-top: 50px;
+        height: 20px;
+
+    }
+
+    .ybc_user1 {
+        margin-bottom: 20px;
+        margin-top: 30px;
+
+        height: 40px;
+
+    }
+
+    .left {
+        float: left;
+    }
+
+    .ybc_text .ybc_next {
+        width: 204px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        background: #f70;
+        color: #fff;
+        font-size: 16px;
+        font-family: 'Microsoft Yahei';
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+
+    .ybc_hint1 {
+        height: 30px;
+        line-height: 30px;
+        color: #999;
+        margin-left: 15px;
+    }
+
+    .tycolor {
+        color: #2471cb;
+        text-decoration: underline;
+    }
+</style>
+<div class="main" id="reg-prev">
+    <div class="main_box">
+        <div class="warning">
+            <h2>风险警示</h2>
+            {$config.reg_risk_warning}
+        </div>
+        <div class="ybc_user2 clearfix">
+            <div class="ybc_text left"><input name="agree" id="tongyi" type="checkbox" onclick="xuanzhong()"></div>
+            <div class="ybc_hint left"><label for="tongyi">我已经认真阅读以上风险提示，并已同意{$config.title}服务条款，同意在自担风险，自担损失的情况下参与交易
+            </label></div>
+            <div class="ybc_hint left"><span id="agree"></span></div>
+        </div>
+        <div class="ybc_user1 clearfix">
+            <div class="ybc_label left"><label>&nbsp;</label></div>
+            <div class="ybc_text left">
+                <input value="继续注册" id="next-btn" class="ybc_next" style="background-color:#e1e1e1; " type="submit">
+            </div>
+            <div class="ybc_hint1 left"><span id="agree"> <a href="{:url('Index/index')}" class="tycolor">取消</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ybc_section" id="reg-now" style="display:none;">
+
+    <form class="ybc_userarea" id="ttttform" method="post" action="{:url('member/register')}">
+        <div id="step1">
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label for="email">电话号码</label></div>
+                <div class="ybc_text left"><input name="name" id="email" class="user_phone_num" type="text"></div>
+                <div class="ybc_hint left"><strong class="msg_i" id="email_msg">i</strong><span id="emailmsg">请输入您的电话号码，用于登录和找回密码</span>
+                </div><!--默认 i class="msg_i"  正确class="msg_error"  错误class="msg_ok"-->
+            </div>
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label for="pwd">登录密码</label></div>
+                <div class="ybc_text left"><input id="pwd" name="pass" type="password"></div>
+                <div class="ybc_hint left">
+                    <strong class="msg_i" id="pwd_msg">i</strong><span id="pwdmsg">密码长度6-20位</span></div>
+            </div>
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label for="repwd">重复密码</label></div>
+                <div class="ybc_text left"><input id="repwd" name="repass" type="password"></div>
+                <div class="ybc_hint left"><strong class="msg_i" id="repwd_msg">i</strong><span id="repwdmsg">重复输入密码，两次需要一致</span>
+                </div>
+            </div>
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label for="pay_pass">交易密码</label></div>
+                <div class="ybc_text left"><input id="pay_pass" name="pay_pass" type="password"></div>
+                <div class="ybc_hint left"><strong class="msg_i" id="pay_pass_msg">i</strong><span id="pay_passmsg">交易密码不能与登录密码相同</span>
+                </div>
+            </div>
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label for="captcha_code">验证码</label></div>
+                <div class="ybc_text left"><input name="captcha_code" id="captcha_code" type="text"></div>
+                <div class="left" style="line-height:30px;">
+                    <span id="send_captcha_code" style="color:#FF7700; line-height:30px;cursor:pointer;">点击发送</span><span id="check_time_id" style="color:#FF7700;display: none;">60</span>
+                </div>
+            </div>
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label for="pid">邀请码</label></div>
+                <div class="ybc_text left"><input name="uid" id="pid" type="text"></div>
+                <div class="left" style="color:#f00; line-height:30px;">选填项</div>
+            </div>
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label>&nbsp;</label></div>
+                <div class="ybc_text left"></div>
+
+                <div class="ybc_hint left"><span id="agree"></span></div>
+            </div>
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label>&nbsp;</label></div>
+                <div class="ybc_text left"><input value="注 册" id="ybc_next_id" class="ybc_next" type="button"></div>
+            </div>
+        </div>
+    </form>
+</div>
+{include file='/tpl/msg'}
+<script src="/static/index/home/js/form.js"></script>
+<script type="text/javascript">
+    vali = {email: 0, pwd: 0, repwd: 0, tongyi: 1};
+    valistep2 = {pwdtrade: 0, repwdtrade: 0}
+    $('#ybc_next_id').click(function () {
+        var email_msg = $.trim($('#email_msg').text());
+        var pay_pass_msg = $.trim($('#pay_pass_msg').text());
+        var pwd_msg = $.trim($('#pwd_msg').text());
+        var repwd_msg = $.trim($('#repwd_msg').text());
+        var captcha_code = $('#captcha_code').val();
+        if (email_msg != '√' || pay_pass_msg != '√' || pwd_msg != '√' || repwd_msg != '√' || !captcha_code) {
+            $(this).v_error_tips('请正确填写表单项');
+            return false
+        }
+        $('#ttttform').submit();
+        return false;
+    });
+    $('#email').bind('blur', function () {
+        var phone = $('#email').val();
+        if (!phone) {
+            return false;
+        }
+        var path_phone = "{:url('member/check_phone')}";
+        $.get(path_phone, {phone: phone}, function (r) {
+            if (!r.status) {
+                $('#email_msg').html("×");
+                $('#email_msg').css('msg_error');
+                validateMsg('email', r.error_desc);
+                return false;
+            }
+            $('#email_msg').html("√");
+            $('#email_msg').css('msg_ok');
+            $('#emailmsg').hide();
+        }, 'json');
+    });
+
+    $('#pay_pass').bind('blur', function () {
+        var pLen = $(this).val().length;
+        if (pLen < 6 || pLen > 20) {
+            $('#pay_pass_msg').html("×");
+            $('#pay_pass_msg').css('msg_error');
+            return validateMsg('pay_pass', '密码长度在6-20个字符之间', 0);
+        }
+        if ($('#pay_pass').val() == $('#pwd').val()) {
+            $('#pay_pass_msg').html("×");
+            $('#pay_pass_msg').css('msg_error');
+            return validateMsg('pay_pass', '交易密码不能与登录密码一致哦', 0);
+        }
+        $('#pay_pass_msg').html("√");
+        $('#pay_pass_msg').css('msg_ok');
+        $('#pay_passmsg').hide();
+    });
+
+    $('#pwd').bind('blur', function () {
+        var pLen = $(this).val().length;
+        if (pLen < 6 || pLen > 20) {
+            $('#pwd_msg').html("×");
+            $('#pwd_msg').css('msg_error');
+            return validateMsg('pwd', '密码长度在6-20个字符之间', 0);
+        }
+        $('#pwd_msg').html("√");
+        $('#pwd_msg').css('msg_ok');
+        return validateMsg('pwd', '', vali.pwd = 1);
+    });
+    $('#repwd').bind('blur', function () {
+        var pLen = $(this).val().length;
+        if (pLen < 6 || pLen > 20) {
+            $('#repwd_msg').html("×");
+            $('#repwd_msg').css('msg_error');
+            return validateMsg('repwd', '密码长度在6-20个字符之间', 0);
+        }
+        if ($('#pwd').val() != $('#repwd').val()) {
+            $('#repwd_msg').html("×");
+            $('#repwd_msg').css('msg_error');
+            return validateMsg('repwd', '密码不一致，请重新输入。', 0);
+        }
+        $('#repwd_msg').html("√");
+        $('#repwd_msg').css('msg_ok');
+        return validateMsg('repwd', '', vali.repwd = 1);
+    });
+
+    $("#tongyi").bind('click', function () {
+        if ($(this).val() == 1)
+            $(this).val(0);
+        else
+            $(this).val(1);
+        if ($(this).val() == 0) {
+            return validateMsg('agreemsg', '需同意本网站服务条款方可进行下一步', vali.tongyi = 0);
+        } else {
+            return validateMsg('agreemsg', '', vali.tongyi = 1);
+        }
+    });
+
+    function step1() {
+        //检查第一步是否有问题
+        for (var i in vali) {
+            if (!vali[i]) {
+                event.preventDefault();
+                return false;
+            }
+        }
+        $('#step1').hide()
+        $('#step2').show();
+        $('#currentpwd').addClass('current');
+
+    }
+
+    function step2() {
+        if (valistep2.pwdtrade == 0 || valistep2.repwdtrade == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+</script>
+
+<script>
+    $('#tongyi').click(function () {
+        var isAgree = $(this).attr('checked');
+        if (isAgree) {
+            $(this).removeAttr('checked');
+            $('#next-btn').css({'background': '#e1e1e1'});
+        } else {
+            $(this).attr("checked", 'true');
+            $('#next-btn').css({'background': '#f60'});
+        }
+
+    });
+    $('#next-btn').click(function () {
+        var isAgree = $('#tongyi').attr('checked');
+        if (isAgree) {
+            $('#reg-prev').hide();
+            $('#reg-now').show();
+        }
+    });
+
+    $('#send_captcha_code').click(function () {
+        var self = $('#send_captcha_code');
+        var user_phone_num = $('.user_phone_num').val();
+        if (!user_phone_num) {
+            self.v_error_tips('请先填写手机号码', '#FF7700');
+            return false;
+        }
+        if (!(/^1[34578]\d{9}$/.test(user_phone_num))) {
+            self.v_error_tips('请填写正确的手机号码', '#FF7700');
+            return false;
+        }
+        $.post("{:url('member/send_code')}", {phone: user_phone_num, type: 'reg'}, function (result) {
+            if (!result.status) {
+                self.v_error_tips(result.error_desc, '#FF7700');
+                return false;
+            }
+            $().wh_succ_notice('发送成功', function () {
+                setInterval(check_time, 1000);
+            });
+        }, 'json');
+    });
+
+    function check_time() {
+        var check_time = $.trim($('#check_time_id').text());
+        check_time = parseInt(check_time);
+        if (check_time >= 0) {
+            $('#send_captcha_code').hide();
+            check_time = check_time - 1;
+            $('#check_time_id').text(check_time);
+            $('#check_time_id').show();
+        } else {
+            $('#send_captcha_code').show();
+            $('#check_time_id').hide();
+        }
+    }
+</script>
+
+{include file="/tpl/footer"}

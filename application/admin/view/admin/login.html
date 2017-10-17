@@ -1,0 +1,45 @@
+{include file='/tpl/head'}
+<link href="/static/admin/css/login.css" rel="stylesheet" type="text/css"/>
+<body style="background:#00205D; ">
+<div class="logintop">
+</div>
+<div class="loginbox">
+    <form action="{:url('admin/login')}" method="post" name="form1" id="user_login_form">
+        <ul class="logincon">
+            <li class="title">外汇系统后台登陆</li>
+            <li>
+                <i class="username"></i>
+                <input type="text" title="用户名" name="name" value="" class="inputname"
+                       onfocus="this.className='inputname act'" onblur="this.className='inputname'" v-data="require">
+            </li>
+            <li>
+                <i class="password"></i>
+                <input type="password" title="密码" name="password" value="" class="inputpwd"
+                       onfocus="this.className='inputpwd act'" onblur="this.className='inputpwd'" v-data="require">
+            </li>
+            <li>
+                <i class="password"></i>
+                <input type="text" title="验证码" name="captcha" style="width:150px;float:left;margin-left:49px;" value="" class="inputpwd" onfocus="this.className='inputpwd act'" onblur="this.className='inputpwd'" v-data="require">
+                <img id="captcha_img" src="{:captcha_src()}">
+            </li>
+            <li>
+                <input type="button" title="登录" value="登 录" class="loginbtn"/>
+                <input type="reset" title="重置" value="重 置" class="loginbtn2"/>
+            </li>
+        </ul>
+    </form>
+    <div class="loginfoot">
+        <p> copyright&copy;2015-2020 外汇 </p>
+    </div>
+</div>
+{include file='/tpl/msg'}
+<script type="text/javascript">
+    $('#captcha_img').click(function () {
+        $('#captcha_img').attr('src', "{:captcha_src()}");
+    });
+    $('.loginbtn').click(function () {
+        $('#user_login_form').v_validate();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+{include file='/tpl/head'}
+<style type="text/css">
+    .dtx {
+        color: green;
+        font-size: 21px;
+        margin-left: 1em;
+        cursor: pointer;
+    }
+
+    .dcz {
+        color: #EFA63E;
+        font-size: 21px;
+        cursor: pointer;
+    }
+</style>
+<span id="look_dcz" class="glyphicon glyphicon-question-sign dcz">查看已充值</span>
+<span id="look_dtx" class="glyphicon glyphicon-question-sign dtx">查看已提现</span>
+<form class="form-inline" action="{:url('jymanage/cztx_action')}" method="post" id="sub_search_form" role="form"
+      style="margin-top: 1em">
+    <div class="form-group">
+        <label class="sr-only" for="name">名称</label>
+        <input type="text" name="member_username" class="form-control" id="name" placeholder="请输入昵称" v-data="require">
+    </div>
+    <button type="button" class="btn btn-default sub_btn_search">搜索</button>
+</form>
+<table class="table table-hover">
+    <tr>
+        <th>用户名</th>
+        <th>金额</th>
+        <th>完成时间</th>
+        <th>收款帐号</th>
+        <th>收款方式</th>
+        <th>类型</th>
+        <th>操作</th>
+    </tr>
+    {foreach $data as $row}
+    <tr>
+        <td>
+            {$row.member_username}
+        </td>
+        <td>
+            ￥{$row.money}元
+        </td>
+        <td>
+            {$row.tx_time|date="Y-m-d H:i:s",###}
+        </td>
+        <td>
+            {$row.status == 1 ? '-' : $row.tx_account}
+        </td>
+        <td>
+            {$row.status == 1 ? '-' : $sk_type[$row.account_type]}
+        </td>
+        <td>
+            {if $row.status eq 1}
+            <label>充值</label>
+            {else}
+            <label>提现</label>
+            {/if}
+        </td>
+        <td>
+            {if $row.status eq 1}
+            <button type="button" class="btn btn-warning disabled">充值已完成</button>
+            {else}
+            <button type="button" class="btn btn-success disabled">提现已完成</button>
+            {/if}
+        </td>
+    </tr>
+    {/foreach}
+</table>
+<div>
+    {$data->render()}
+</div>
+{include file='/tpl/msg'}
+<script type="text/javascript">
+    $('.sub_btn_search').click(function () {
+        $('#sub_search_form').v_validate();
+    });
+    $('#look_dcz').click(function () {
+        window.location.href = "{:url('jymanage/jy_action',['status'=>1])}";
+    });
+    $('#look_dtx').click(function () {
+        window.location.href = "{:url('jymanage/jy_action',['status'=>2])}";
+    });
+</script>

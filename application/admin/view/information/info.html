@@ -1,0 +1,42 @@
+{include file='/tpl/head'}
+<div style="width:100%;height: 100%;overflow-y:scroll;">
+    <table class="table table-hover">
+        <tr>
+            <th>币种英文</th>
+            <th>币种中文</th>
+            <th>金额</th>
+            <th>开盘价</th>
+            <th>昨收价</th>
+            <th>最低价</th>
+            <th>最高价</th>
+        </tr>
+        {foreach $wh_data as $row}
+        <tr>
+            <td>
+                {$row.currency}
+            </td>
+            <td>
+                {$row.name}
+            </td>
+            <td>
+                {$row.price}
+            </td>
+            <td>
+                {$row.kp_price}
+            </td>
+            <td>
+                {$row.zs_price}
+            </td>
+            <td>
+                {$row.zd_price}
+            </td>
+            <td>
+                {$row.zg_price}
+            </td>
+        </tr>
+        {/foreach}
+    </table>
+</div>
+<div>
+</div>
+{include file='/tpl/msg'}

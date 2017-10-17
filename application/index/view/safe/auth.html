@@ -1,0 +1,175 @@
+{include file="/tpl/header"}
+<script type="text/javascript" src="/static/index/home/js/imageuploadpreview.js"></script>
+<!--top end-->
+<div class="ybc_section">
+    <div class="ybc_warn Font18">为了确保您的资金安全，请实名认证</div>
+    <form id="member_auth_form" method="post" action="{:url('safe/auth')}" enctype="multipart/form-data">
+        <div class="ybc_userarea ybc_userarea2" style="margin-bottom:50px;">
+            <!--<div class="ybc_user clearfix">-->
+                <!--<div class="ybc_label left"><label for="nick">昵称</label></div>-->
+                <!--<div class="ybc_text left"><input name="nick" id="nick" value="" type="text"></div>-->
+                <!--<div class="ybc_hint left"><strong class="msg_i">i</strong><span id="nickmsg"><font style="color:red">请输入您的昵称</font></span></div>-->
+            <!--</div>-->
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label for="name">真实姓名</label></div>
+                <div class="ybc_text left"><input name="real_name" id="name" value="" v-data="require" autocomplete="off" maxlength="8" type="text" v-msg="请填写真实姓名"></div>
+                <!--<div class="ybc_hint left"><strong class="msg_i">i</strong><span id="namemsg">真实姓名设置后不能修改，并且与提现账户名相同</span></div>-->
+            </div>
+            <!--<div class="ybc_user clearfix">-->
+                <!--<div class="ybc_label left"><label for="cardtype">证件类型</label></div>-->
+                <!--<div class="ybc_text left">-->
+                    <!--<select id="cardtype" name="cardtype">-->
+                        <!--<option value="1" selected="selected">身份证</option>-->
+                        <!--<option value="2">护照</option>-->
+                        <!--<option value="3">军官证</option>-->
+                        <!--<option value="4">其它</option>-->
+                    <!--</select>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label for="idcard">身份证号码</label></div>
+                <div class="ybc_text left"><input name="identity" id="idcard" value="" type="text" v-data="identity" v-msg="请填写身份证号码"></div>
+                <!--<div class="ybc_hint left"><strong class="msg_i">i</strong><span id="idcardmsg">证件号码注册后不能修改</span></div>-->
+            </div>
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label for="idcard">身份证正面</label></div>
+                <div class="ybc_text left"><img id="identity_zm_click" src="{$auth.identity_zm ? $auth.identity_zm : '/static/index/home/images/empty_img.png'}" width="160px" height="160px"></div>
+                <input name="identity_zm" id="identity_zm" type="file" style="display: none;" v-data="require" v-msg="请上传身份证正面">
+                <!--<div class="ybc_hint left"><strong class="msg_i">i</strong><span id="identity_zm_msg">请上传身份证正面</span></div>-->
+            </div>
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label for="idcard">身份证反面</label></div>
+                <div class="ybc_text left"><img id="identity_fm_click" src="{$auth.identity_fm ? $auth.identity_fm : '/static/index/home/images/empty_img.png'}" width="160px" height="160px"></div>
+                <input name="identity_fm" id="identity_fm" type="file" style="display: none;" v-data="require" v-msg="请上传身份证反面">
+                <!--<div class="ybc_hint left"><strong class="msg_i">i</strong><span id="identity_zm_msg">请上传身份证正面</span></div>-->
+            </div>
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label for="idcard">身份证手持</label></div>
+                <div class="ybc_text left"><img id="identity_sc_click" src="{$auth.identity_sc ? $auth.identity_sc : '/static/index/home/images/empty_img.png'}" width="160px" height="160px"></div>
+                <input name="identity_sc" id="identity_sc" type="file" style="display: none;" v-data="require" v-msg="请上传手持身份证">
+                <!--<div class="ybc_hint left"><strong class="msg_i">i</strong><span id="identity_zm_msg">请上传身份证正面</span></div>-->
+            </div>
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label for="phone">手机号码</label></div>
+                <div class="ybc_text left" style=" line-height:30px; width:209px;">
+                    <input name="phone" id="phone" value="{$online_user.name}" readonly type="text" v-data="phone">
+                </div>
+                <!--<div class="ybc_hint left">-->
+                    <!--<strong class="msg_i">i</strong>-->
+                    <!--<span id="momsg">请输入您的手机号码</span>-->
+                <!--</div>-->
+            </div>
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label for="code">验证码</label></div>
+                <div class="ybc_text left"><input name="code" id="code" value="" type="text" v-data="number" v-msg="手机验证码只能是数字"></div>
+                <div class="ybc_hint left"><span id="send_captcha_code" style="color:#FF7700; line-height:30px;cursor:pointer;">点击发送</span><span id="check_time_id" style="color:#FF7700;display: none;">60</span></div>
+            </div>
+            <!--<input id="avatar" name="avatar" value="/images/ulogodefault.jpg" type="hidden">-->
+            <div class="ybc_user clearfix">
+                <div class="ybc_label left"><label>&nbsp;</label></div>
+                <div class="ybc_text left"><input value="提交" class="ybc_next" id="member_auth_btn" type="button"></div>
+            </div>
+        </div>
+        <div style="font-size:14px; padding-left:180px; line-height:24px; color:#666; margin-bottom:30px;">
+            <p>1.真实姓名经实名认证后将不能够更改，请如实填写。</p>
+            <p>2.{$config.title|default='本网站'}只接受实名充值，提现时银行等姓名信息必须与您的认证姓名一致。</p>
+            <p>3.{$config.title|default='本网站'}有合理的理由怀疑用户提供虚假身份信息时，有权拒绝注册或者冻结、注销已经注册的账户及资产。</p>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="/static/index/home/js/city.js"></script>
+<script type="text/javascript">
+    $("document").ready(function(){
+        initProvinceCity($("#p1"),$("#c1"));
+    });
+</script>
+<script type="text/javascript" src="/static/index/home/js/ajaxfileupload.js"></script>
+<script charset="utf-8" src="/static/index/home/js/kindeditor-min.js"></script>
+<script charset="utf-8" src="/static/index/home/js/zh_CN.js"></script>
+<script src="/static/index/home/js/form.js"></script>
+<script type="text/javascript">
+    $('#send_captcha_code').click(function () {
+        var self = $('#send_captcha_code');
+        var user_phone_num = $('#phone').val();
+        if (!user_phone_num) {
+            self.v_error_tips('请先填写手机号码', '#FF7700');
+            return false;
+        }
+        if (!(/^1[34578]\d{9}$/.test(user_phone_num))) {
+            self.v_error_tips('请填写正确的手机号码', '#FF7700');
+            return false;
+        }
+        $.post("{:url('member/send_code')}", {phone: user_phone_num, type: 'auth'}, function (result) {
+            if (!result.status) {
+                self.v_error_tips(result.error_desc, '#FF7700');
+                return false;
+            }
+            $().wh_succ_notice('发送成功', function () {
+                setInterval(check_time, 1000);
+            });
+        }, 'json');
+    });
+    $('#identity_zm_click').click(function () {
+        $('#identity_zm').trigger('click');
+    });
+    $('#identity_fm_click').click(function () {
+        $('#identity_fm').trigger('click');
+    });
+    $('#identity_sc_click').click(function () {
+        $('#identity_sc').trigger('click');
+    });
+    $('#identity_zm').uploadPreview({
+        Img: 'identity_zm_click',
+        Width: 100,
+        Height: 80,
+        ImgType: ['gif', 'jpeg', 'jpg', 'bmp', 'png'],
+        Callback: function () {
+
+        }
+    });
+    $('#identity_fm').uploadPreview({
+        Img: 'identity_fm_click',
+        Width: 100,
+        Height: 80,
+        ImgType: ['gif', 'jpeg', 'jpg', 'bmp', 'png'],
+        Callback: function () {
+
+        }
+    });
+    $('#identity_sc').uploadPreview({
+        Img: 'identity_sc_click',
+        Width: 100,
+        Height: 80,
+        ImgType: ['gif', 'jpeg', 'jpg', 'bmp', 'png'],
+        Callback: function () {
+
+        }
+    });
+    $('#member_auth_btn').click(function () {
+        $('#member_auth_form').v_validate('form',{},'#member_auth_btn');
+    });
+
+    function check_time() {
+        var check_time = $.trim($('#check_time_id').text());
+        check_time = parseInt(check_time);
+        if (check_time >= 0) {
+            $('#send_captcha_code').hide();
+            check_time = check_time - 1;
+            $('#check_time_id').text(check_time);
+            $('#check_time_id').show();
+        } else {
+            $('#send_captcha_code').show();
+            $('#check_time_id').hide();
+        }
+    }
+</script>
+
+
+<!--  暂时不用 手机验证 -->
+<!---<script type="text/javascript" src="/static/index/home/js/phonecode.js"></script>-->
+<!--footer start-->
+{include file="/tpl/footer"}
+{include file='/tpl/msg'}
+<!--footer end-->
+<script type="text/javascript" src="/static/index/home/js/downList.js"></script>
+<script type="text/javascript" src="/static/index/home/js/sdmenu.js"></script>
