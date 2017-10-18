@@ -2,10 +2,29 @@
 <div id="main">
     <div class="main_box">
         <div class="raise clearfix" style="margin: 0 auto;">
-            <link rel="stylesheet" href="/static/index/home/css/layer.css">
+            <!--<link rel="stylesheet" href="/static/index/home/css/layer.css">-->
             <script src="/static/index/home/js/base64.js"></script>
             <script src="/static/index/home/js/Fnc.js"></script>
             <style>
+                .pagination{
+                    width: 500px;
+                }
+                #layui-layer1{
+                    width: 500px;
+                    height: 430px;
+                    align-content: center;
+                    text-align: center;
+                }
+                .alert_p{
+                    background-color: rgb(255, 255, 202);
+                }
+                .alert_span{
+                    font-weight: bolder;
+                    color: rgb(255, 102, 0);
+                }
+                .alert_content{
+                    color: rgb(255, 102, 0);
+                }
                 .zzzn a {
                     display: block;
                     float: right;
@@ -45,10 +64,6 @@
 
                 .help_link:hover {
                     color: #f30;
-                }
-
-                .help_link1 {
-
                 }
 
                 .ebank_pay {
@@ -290,7 +305,7 @@
                 <div class="ybcoin ">
                     <h2 class="left">充值记录</h2>
                     <p class="right" style="font-size:14px; color:#f00; line-height:40px; margin-bottom:0;">
-                        如果长时间没有到账，请联系在线客服。
+                        这里只列出最近5条充值记录..
                         <!--<a href="{:url('Help/index?id=62')}" class="help_link">充值不到账如何处理？</a>-->
                     </p>
                     <div class="clear"></div>
@@ -299,40 +314,34 @@
             <table class="raise_list" style="border:1px solid #e1e1df;" align="center" border="0" cellpadding="0" cellspacing="0">
                 <thead>
                 <tr>
-                    <th>记录ID</th>
-                    <th>转入渠道</th>
-                    <th>数量</th>
-                    <th>发送时间</th>
+                    <th>转款方式</th>
+                    <th>收款帐号</th>
+                    <th>金额</th>
+                    <th>提交时间</th>
                     <th>状态</th>
                 </tr>
                 </thead>
                 <tbody>
-                {if !empty($list)}
+                {if !empty($cztx_list)}
+                {foreach $cztx_list as $item}
                 <tr>
-                    <td>{$key}</td>
                     <td>
-                        <eq name="vo.type" value="1">人工充值
-                            <else/>
-                            网银充值
-                        </eq>
+                        {$account_type_list[$item.account_type]}
                     </td>
-                    <td>{$vo.count|default=0}</td>
-                    <td>{$vo.add_time|date='Y-m-d H:i:s',###}</td>
                     <td>
-                        <eq name='vo.status' value='请付款'><a class="fkbtn" onclick='showPay({$vo.count|default=0})'>
-                            <else/>
-                            <a class="fkbtn"></eq>
-                        {$vo.status|default=0}</a></td>
+                        {$item.tx_account}
+                    </td>
+                    <td>{$item.money}</td>
+                    <td>{$item.pay_time|date='Y-m-d H:i:s',###}</td>
+                    <td>
+                        {$ct_status_list[$item.ct_status]}
+                    </td>
                 </tr>
+                {/foreach}
                 {/if}
                 </tbody>
             </table>
-            <div class="page" style=" min-width:200px !important; float:right;">
-                {$page?=$page}
-            </div>
-            <!-- exchange_cny list end -->
 
-            <!-- recharge alert start -->
             <style type="text/css">
                 .ybc_chongzhi_tc {
                     width: 810px;
@@ -538,87 +547,9 @@
                     padding-left: 38px;
                 }
             </style>
-
-            <div id="recharge_alert_bank" style="display:none;">
-                <div class="box_bg2"></div>
-                <div class="ybc_chongzhi_tc">
-                    <div class="ybc_chongzhi_tc_tittle">
-                        <h2 class="left clearfix" id="recharge_alert_title"></h2>
-                        <div id="recharge_alert_bank_close"><a class="ybc_chongzhi_tc_tittle_img  right clearfix "></a>
-                        </div>
-                    </div>
-
-                    <div class="ybc_chongzhi_tc_main">
-
-                        <h3 style=" padding-bottom:15px;">
-                            请您打开你的<span class="hs phone_bank_and_net"></span><br>按照汇款金额<span class="hs recharge_html_num"></span>
-                        </h3>
-                        <div style=" margin:0 auto;">
-                            <ul style=" width:640px; height:120px; margin-left:100px;">
-                                {if empty($bank)}
-                                <!--居中-->
-                                <div style=" float:left; margin-left:180px !important;">
-                                    <li class="pad"><span>向{$bank[0]['bank_name']|default='暂无'}汇款</li>
-                                    <li class="pad"><span>收款人：</span>{$bank[0]['bank_name']|default='暂无'}</li>
-                                    <li class="pad"><span>收款人账号：</span>{$bank[0]['bank_no']|default='暂无'}</li>
-                                    <li class="pad"><span>收款人开户行：</span><span class="wid">{$bank[0]['bank_adddress']|default='暂无'}</span>
-                                    </li>
-                                </div>
-                                {/if}
-                                {if !empty($address)}
-                                <!--居中-->
-                                <notempty name="bank[1]['bank_adddress']">
-                                    <div style=" float:left;">
-                                        <li class="pad"><span>向{$bank[0]['bank_name']|default='暂无'}汇款</li>
-                                        <li class="pad"><span>收款人：</span>{$bank[0]['bank_name']|default='暂无'}</li>
-                                        <li class="pad"><span>收款人账号：</span>{$bank[0]['bank_no']|default='暂无'}</li>
-                                        <li class="pad"><span>收款人开户行：</span><span class="wid">{$bank[0]['bank_adddress']|default='暂无'}</span>
-                                        </li>
-                                        <!--<div style="border-bottom:1px #ccc dashed;"></div>		-->
-                                    </div>
-
-                                    <div style=" float:left;">
-                                        <li class="pad"><span>向{$bank[1]['bank_name']|default='暂无'}汇款</li>
-                                        <li class="pad"><span>收款人：</span>{$bank[1]['bank_name']|default='暂无'}</li>
-                                        <li class="pad"><span>收款人账号：</span>{$bank[1]['bank_no']|default='暂无'}</li>
-                                        <li class="pad"><span>收款人开户行：</span><span class="wid">{$bank[1]['bank_adddress']|default='暂无'}</span>
-                                        </li>
-                                        <!--<div style="border-bottom:1px #ccc dashed;"></div>		-->
-                                    </div>
-                                </notempty>
-                                {/if}
-                                <div class="clear"></div>
-                                <li style="font-size:14px; color:#f00; padding-left:5px;"><span style="font-size:18px;">汇款金额：</span><strong style="font-size:18px;" class="recharge_html_num"></strong>（汇款时请严格按照此金额转账，支付宝转账请备注ID号，否则不能到账）
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="ybc_chongzhi_tc_tishi">
-                        <h3 style="text-align: left; margin-left: 100px;">注意</h3>
-                        <p>1、本系统非自动扣款，请通过您的<font class="phone_bank_and_net"></font>汇款！<br>
-                            2、如您已向{$bank[0]['bank_name']|default='暂无'}
-                            <notempty name="bank[1]['bank_name']">或{$bank[1]['bank_name']|default='暂无'}</notempty>
-                            汇款<font class="recharge_html_num"></font>"，系统在收到汇款后20分钟内入账。
-                        </p>
-                        <div class="ybc_chongzhi_tc_tishi_bz">
-                            <div class="left clearfix">
-                                <a href="{:url('Help/index',array('article_id'=>'59'))}" target="_blank" class="help_link">银行卡汇款帮助</a>
-                            </div>
-                            <div class="right clearfix">
-                                <a href="http://wpa.qq.com/msgrd?v=3&uin={$config['qq1']}&site=qq&menu=yes" class="qq_qq help_link">联系客服QQ</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- recharge alert end -->
 
-            <div>
-                <!-- <button class="ebank_pay" onclick="Ebank.licai()" style="margin-top:160px;">去元宝理财充值</button> -->
-                <div class="ebank_box_common" style=" width:100%; height:100%; background:#000; filter: Alpha(opacity=60); -moz-opacity: 0.6; -khtml-opacity: 0.6; opacity: 0.6; position:absolute; z-index:9998; position:fixed; left:0; top:0; z-index: 9998;  display:none;">
-                </div>
-            </div>
+
 
             <script type="text/javascript" src="/static/index/home/js/tab2.js"></script>
             <script src="/static/index/home/js/layer.js"></script>
@@ -651,9 +582,10 @@
         }
     });
 
-    $('#over_num').blur(function () {
+    $('#over_num').on('keyup',function () {
         var over_money = $(this).val();
         if (!over_money) {
+            $('#js_pay_money').text('');
             return false;
         }
         over_money = parseInt(over_money);
@@ -666,25 +598,45 @@
     $('#choice_submit').click(function () {
         var over_money = $.trim($('#js_pay_money').text());
         var select_val = $('#bankOut').val();
+        var bank = $.trim($('#bankOut').find('option:selected').text());
+        var card_people = $('#bankOut').find('option:selected').attr('card_people');
         var card = '';
+        var card_type = '';
         if (select_val != 'alipay' && select_val != 'wechat') {
             card = $('#bankOut').find('option:selected').attr('card');
+            card_type = card;
         } else {
             card = select_val;
+            card_type = '二维码支付';
         }
         var pay_flag = $('#recharge_account_yes').val();
-        if (!over_money || !pay_flag) {
+        if (!over_money || !pay_flag || !select_val) {
             return false;
         }
         card = !card ? null : card;
-        layer.confirm('是否确定已经转款，并且已核对转账金额与所填金额相同', function (index) {
+        card_people = !card_people ? '二维码收款' : card_people;
+        layer.confirm('<p class="alert_p"><span class="alert_span">转账金额：</span><span class="alert_content">'+over_money+'</span></p><p class="alert_p"><span class="alert_span">收款银行：</span><span class="alert_content">'+bank+'</span></p><p class="alert_p"><span class="alert_span">收款卡号：</span><span class="alert_content">'+card_type+'</span></p><p class="alert_p"><span class="alert_span">收款人：</span><span class="alert_content">'+card_people+'</span></p><p class="alert_p"><span class="alert_span">转款标识：</span><span class="alert_content">'+pay_flag+'</span></p><br><br><p class="alert_p">请核对信息并确认是否已经转款，如已转款请点击确定，否则点击取消从新转款</p>', {icon: 3, title:'充值提示'},function (index) {
+            layer.close(index);
+            var load_index = layer.load(1, {
+                shade: [0.1,'#fff']
+            });
             $.post("{:url('safe/do_pay')}", {
                 over_money: over_money,
                 card: card,
                 pay_flag: pay_flag
             }, function (result) {
-
-            });
+                layer.close(load_index);
+                if (!result.status){
+                    if (result.error =='nologin'){
+                        window.location.href = "{:url('member/login')}";
+                    }
+                    $().wh_error_notice(result.error_desc);
+                    return false;
+                }
+                $().wh_succ_notice('提交成功',function () {
+                   window.location.reload();
+                });
+            },'json');
         })
     });
 </script>

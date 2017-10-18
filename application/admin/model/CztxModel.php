@@ -45,6 +45,7 @@ class CztxModel extends Model {
                 }
             }
         }
+        $db->order('id DESC');
         if ($limit) {
             $data = $db->paginate($limit);
         }else{

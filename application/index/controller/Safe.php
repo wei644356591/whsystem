@@ -144,6 +144,9 @@ class Safe extends Base {
         if (!$auth || $auth['status'] != 2) {
             $this->red_notice_page('请先进行实名认证', false, url('safe/auth'));
         }
+        $account_type_list = account_type_list();
+        $ct_status_list = ct_status_list();
+        $cztx_list = CztxModel::cztx_lists(['member_id' => $online_user['id']], 5);
         $pay_code = uniqid();
         $qrcode = QrcodeModel::get_qrcode(['id' => 1]);
         $bank_list = BankModel::bank_lists();
@@ -151,7 +154,10 @@ class Safe extends Base {
         $data['pay_code'] = substr($pay_code, -4, 4);
         $data['auth'] = $auth;
         $data['qrcode'] = $qrcode;
+        $data['account_type_list'] = $account_type_list;
         $data['bank_list'] = $bank_list;
+        $data['cztx_list'] = $cztx_list;
+        $data['ct_status_list'] = $ct_status_list;
         $this->assign($data);
         return view();
     }
@@ -159,16 +165,16 @@ class Safe extends Base {
     public function do_pay() {
         $online_user = $this->check_online_user();
         if (!$online_user) {
-            $this->red_notice_page('请先登录后，再操作', false, url('member/login'));
+            ajax_error_tip('nologin');
         }
         $over_money = $this->request->post('over_money');
         $card = $this->request->post('card');
         $pay_flag = $this->request->post('pay_flag');
         if (!$over_money) {
-            $this->red_notice_page('请填写转账的金额', false, url('safe/pay'));
+            ajax_error_tip('请填写转账的金额');
         }
         if (!$pay_flag) {
-            $this->red_notice_page('转账标识获取失败', false, url('safe/pay'));
+            ajax_error_tip('转账标识获取失败');
         }
         $account_type = 0;
         if (!$card) {
@@ -190,10 +196,51 @@ class Safe extends Base {
         $data['tx_account'] = $card;
         $data['account_type'] = $account_type;
         $data['pay_flag'] = $pay_flag;
-       if (!CztxModel::cztx_add($data)){
-           $this->red_notice_page('系统出错，请重试或直接联系客服', false, url('safe/pay'));
-       }
-        $this->red_notice_page('提交充值信息成功', true, url('safe/pay'));
+        if (!CztxModel::cztx_add($data)) {
+            ajax_error_tip('系统出错，请重试或直接联系客服');
+        }
+        ajax_succ_tip();
+    }
+
+    public function update_pass() {
+        $online_user = $this->check_online_user();
+        if (!$online_user) {
+            $this->red_notice_page('请先登录后，再操作', false, url('member/login'));
+        }
+        if (!$this->request->isAjax()) {
+            return view();
+        }
+    }
+
+    public function do_update_pass() {
+        $online_user = $this->check_online_user();
+        if (!$online_user) {
+            ajax_error_tip('nologin');
+        }
+        $oldpwd = $this->request->post('oldpwd');
+        $pwd = $this->request->post('pwd');
+        $repwd = $this->request->post('repwd');
+        if (!$oldpwd) {
+            ajax_error_tip('请输入历史密码');
+        }
+        if (!$pwd) {
+            ajax_error_tip('请输入新的密码');
+        }
+        if (!$repwd) {
+            ajax_error_tip('请输入新的确认密码');
+        }
+        if ($pwd != $repwd) {
+            ajax_error_tip('两次密码输入不一致');
+        }
+        $oldpwd = md5(md5($oldpwd));
+        if ($online_user['pass'] != $oldpwd) {
+            ajax_error_tip('历史密码输入错误');
+        }
+        $new_pwd = md5(md5($pwd));
+        if (!MemberModel::member_edit(['pass'=>$new_pwd], ['id'=>$online_user['id']])) {
+            ajax_error_tip('修改密码出错');
+        }
+        ajax_succ_tip(array('succ_desc'=>'成功修改登录密码'));
     }
 
 }

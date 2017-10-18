@@ -55,3 +55,18 @@ function config_set_list() {
 8.请控制风险，不要投入超过您风险承受能力的资金，不要购买您所不了解的数字货币，数字积分等虚拟商品。',
     ];
 }
+
+function account_type_list() {
+    return [
+        '1' => '支付宝支付',
+        '2' => '微信支付',
+        '3' => '银行汇款'
+    ];
+}
+
+function ct_status_list() {
+    return [
+        '1' => '充值中',
+        '2' => '已完成'
+    ];
+}

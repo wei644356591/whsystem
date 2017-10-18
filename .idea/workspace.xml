@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd7f81d9-fb3b-4204-803c-5246102af6b0" name="默认" comment="" />
+    <list default="true" id="fd7f81d9-fb3b-4204-803c-5246102af6b0" name="默认" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/index/view/safe/update_pass.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/model/CztxModel.php" afterPath="$PROJECT_DIR$/application/admin/model/CztxModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/database.php" afterPath="$PROJECT_DIR$/application/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/common.php" afterPath="$PROJECT_DIR$/application/index/common.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/controller/Safe.php" afterPath="$PROJECT_DIR$/application/index/controller/Safe.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/safe/index.html" afterPath="$PROJECT_DIR$/application/index/view/safe/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/safe/pay.html" afterPath="$PROJECT_DIR$/application/index/view/safe/pay.html" />
+    </list>
     <ignored path="whsystem.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -22,7 +31,53 @@
     <favorites_list name="whsystem" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Safe.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/index/controller/Safe.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="214" column="34" lean-forward="false" selection-start-line="214" selection-start-column="20" selection-end-line="214" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update_pass.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/index/view/safe/update_pass.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="77" column="60" lean-forward="true" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#1881#1887#0" expanded="true" />
+                <element signature="e#1887#1893#0" expanded="true" />
+                <element signature="e#1893#1899#0" expanded="true" />
+                <element signature="e#1899#1905#0" expanded="true" />
+                <element signature="e#2194#2200#1" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1508321786753" expanded="false" signature="5542:5548" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/static/index/common/js/base.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="29" column="7" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="29" selection-end-column="7" />
+              <folding>
+                <marker date="1508320245585" expanded="true" signature="2721:2741" ph="..." />
+                <marker date="1508320245585" expanded="true" signature="2832:2846" ph="..." />
+                <marker date="1508320245585" expanded="true" signature="2885:2899" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -34,19 +89,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/static/index/home/images/</find>
-      <find>zxicon.png</find>
-      <find>logo</find>
-      <find>__PUBLIC__/Home/js/</find>
-      <find>点击认证</find>
-      <find>证件号码</find>
-      <find>send_captcha_code</find>
-      <find>实名认证</find>
-      <find>受国家要求及为了您的资金安全需进行实名认证</find>
-      <find>/Public/Home/images/</find>
-      <find>ybc_list</find>
-      <find>__PUBLIC__/Home/css/</find>
-      <find>:U</find>
       <find>__PUBLIC__/Home/images/</find>
       <find>fee</find>
       <find>pay_min_money</find>
@@ -63,16 +105,29 @@
       <find>金额</find>
       <find>card_people</find>
       <find>已成功转款</find>
+      <find>layui-layer-dialog</find>
+      <find>数量</find>
       <find>card</find>
+      <find>转款方式</find>
+      <find>account_type</find>
+      <find>li</find>
+      <find>ren</find>
+      <find>如果长时间没有到账，请联系在线客服。这里</find>
+      <find>__PUBLIC__/Home/css/</find>
+      <find>__PUBLIC__/Home/js/</find>
+      <find>登录密码</find>
+      <find>:U</find>
+      <find>tijiao</find>
+      <find>signupForm</find>
     </findStrings>
     <replaceStrings>
       <replace>sms</replace>
       <replace>../images/</replace>
-      <replace>/static/index/home/js/</replace>
-      <replace>/static/index/home/css/</replace>
-      <replace>:url</replace>
       <replace>/static/index/home/images/</replace>
       <replace>bank</replace>
+      <replace>/static/index/home/css/</replace>
+      <replace>/static/index/home/js/</replace>
+      <replace>:url</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -81,11 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/admin/common.php" />
-        <option value="$PROJECT_DIR$/application/admin/model/WhdataModel.php" />
-        <option value="$PROJECT_DIR$/application/admin/model/WhuseModel.php" />
-        <option value="$PROJECT_DIR$/application/admin/model/AdjustModel.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Information.php" />
         <option value="$PROJECT_DIR$/application/admin/view/information/info.html" />
         <option value="$PROJECT_DIR$/application/admin/view/information/set.html" />
         <option value="$PROJECT_DIR$/application/admin/view/tools/menucontent.html" />
@@ -106,7 +156,6 @@
         <option value="$PROJECT_DIR$/application/index/view/member/login.html" />
         <option value="$PROJECT_DIR$/application/index/view/member/find_pass.html" />
         <option value="$PROJECT_DIR$/application/index/view/member/register.html" />
-        <option value="$PROJECT_DIR$/application/index/common.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Crontab.php" />
         <option value="$PROJECT_DIR$/public/static/index/home/css/jb_font-awesome.css" />
         <option value="$PROJECT_DIR$/application/index/view/order/currency_trade.html" />
@@ -120,9 +169,7 @@
         <option value="$PROJECT_DIR$/public/static/index/home/css/jb_style.css" />
         <option value="$PROJECT_DIR$/application/index/view/tpl/footer.html" />
         <option value="$PROJECT_DIR$/application/index/controller/Member.php" />
-        <option value="$PROJECT_DIR$/public/static/admin/js/base.js" />
         <option value="$PROJECT_DIR$/application/index/view/safe/auth.html" />
-        <option value="$PROJECT_DIR$/application/index/view/safe/index.html" />
         <option value="$PROJECT_DIR$/application/index/view/safe/center.html" />
         <option value="$PROJECT_DIR$/application/index/controller/Base.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Base.php" />
@@ -130,8 +177,16 @@
         <option value="$PROJECT_DIR$/application/admin/view/admin/index.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Fund.php" />
         <option value="$PROJECT_DIR$/application/admin/view/fund/bank.html" />
+        <option value="$PROJECT_DIR$/application/database.php" />
+        <option value="$PROJECT_DIR$/application/admin/model/CztxModel.php" />
+        <option value="$PROJECT_DIR$/application/index/common.php" />
         <option value="$PROJECT_DIR$/application/index/view/safe/pay.html" />
+        <option value="$PROJECT_DIR$/application/index/view/safe/update_password.html" />
+        <option value="$PROJECT_DIR$/application/index/view/safe/index.html" />
         <option value="$PROJECT_DIR$/application/index/controller/Safe.php" />
+        <option value="$PROJECT_DIR$/public/static/index/common/js/base.js" />
+        <option value="$PROJECT_DIR$/public/static/admin/js/base.js" />
+        <option value="$PROJECT_DIR$/application/index/view/safe/update_pass.html" />
       </list>
     </option>
   </component>
@@ -173,6 +228,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,14 +240,40 @@
             <path>
               <item name="whsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="whsystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="whsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="whsystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="whsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="whsystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="whsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="whsystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="whsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="whsystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="safe" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -202,11 +285,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\whsystem\application\index\view\safe" />
       <recent name="F:\whsystem\public\uploads\20171007" />
       <recent name="F:\whsystem\public\static\index\home\images" />
       <recent name="F:\whsystem\public\static\index\home\js" />
       <recent name="G:\whsystem\public\static\index\home\images" />
-      <recent name="F:\whsystem\application\index\view\index" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -311,16 +394,18 @@
       <workItem from="1508030473846" duration="23835000" />
       <workItem from="1508119708686" duration="26375000" />
       <workItem from="1508204710322" duration="28978000" />
+      <workItem from="1508294726844" duration="15754000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320290000" />
+    <option name="totallyTimeSpent" value="336044000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23333333" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2923611" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -358,42 +443,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/static/index/home/images/ulogodefault(1).jpg" />
-    <entry file="file://$PROJECT_DIR$/application/index/view/member/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/temp/4cb5a0bcbddeef6ac3df164b92095cb7.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="231" column="21" lean-forward="true" selection-start-line="231" selection-start-column="21" selection-end-line="231" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/index/home/css/jb_font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="435" column="7" lean-forward="false" selection-start-line="435" selection-start-column="7" selection-end-line="435" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/admin/uedit/dialogs/template/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/index/home/images/co_bt.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/static/index/home/images/co_bitecoin.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -516,64 +565,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/admin/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3278">
-          <caret line="149" column="27" lean-forward="true" selection-start-line="149" selection-start-column="27" selection-end-line="149" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/safe/auth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="48" column="40" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#3;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#4;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#5;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#div#2;n#div#6;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#1;n#div#2;n#div#6;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="e#5382#5388#1" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/safe/center.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="105" column="40" lean-forward="false" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="e#2346#2352#0" expanded="false" />
-            <element signature="e#2352#2358#0" expanded="false" />
-            <element signature="e#2358#2364#0" expanded="false" />
-            <element signature="e#2364#2370#0" expanded="false" />
-            <element signature="e#2370#2376#0" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="e#2840#2846#0" expanded="false" />
-            <element signature="e#2846#2852#0" expanded="false" />
-            <element signature="e#2852#2858#0" expanded="false" />
-            <element signature="e#2858#2864#0" expanded="false" />
-            <element signature="e#2864#2870#0" expanded="false" />
-            <element signature="e#3434#3440#0" expanded="false" />
-            <element signature="e#3440#3446#0" expanded="false" />
-            <element signature="e#4210#4216#0" expanded="false" />
-            <element signature="e#4216#4222#0" expanded="false" />
-            <element signature="n#style#0;n#td#5;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#td#5;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Order.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -600,7 +591,7 @@
         <state relative-caret-position="110">
           <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
-            <element signature="e#130#160#0#PHP" expanded="true" />
+            <element signature="e#130#160#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -610,7 +601,7 @@
         <state relative-caret-position="-934">
           <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
-            <element signature="e#129#159#0#PHP" expanded="true" />
+            <element signature="e#129#159#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -645,9 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="e#125#138#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-670">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -673,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -681,7 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="25" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -690,7 +675,7 @@
         <state relative-caret-position="132">
           <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
-            <element signature="e#131#161#0#PHP" expanded="true" />
+            <element signature="e#131#161#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -699,7 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -719,7 +703,7 @@
         <state relative-caret-position="356">
           <caret line="94" column="43" lean-forward="true" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="66" />
           <folding>
-            <element signature="e#130#160#0#PHP" expanded="true" />
+            <element signature="e#130#160#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -728,22 +712,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/safe/index.html">
+    <entry file="file://$PROJECT_DIR$/application/command.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="73" column="73" lean-forward="false" selection-start-line="73" selection-start-column="73" selection-end-line="73" selection-end-column="73" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/model/CztxModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="793">
+          <caret line="49" column="42" lean-forward="true" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/safe/pay.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="685" column="0" lean-forward="false" selection-start-line="685" selection-start-column="0" selection-end-line="685" selection-end-column="0" />
+        <state relative-caret-position="521">
+          <caret line="307" column="39" lean-forward="false" selection-start-line="307" selection-start-column="39" selection-end-line="307" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -757,18 +756,88 @@
             <element signature="n#style#0;n#a#0;n#li#7;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#li#0;n#ul#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#li#2;n#ul#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="58" column="26" lean-forward="false" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/safe/auth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="48" column="40" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/safe/center.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1179">
+          <caret line="105" column="40" lean-forward="false" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/safe/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="102" column="50" lean-forward="false" selection-start-line="102" selection-start-column="50" selection-end-line="102" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#dl#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Safe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="195" column="40" lean-forward="false" selection-start-line="195" selection-start-column="40" selection-end-line="195" selection-end-column="40" />
+        <state relative-caret-position="295">
+          <caret line="214" column="34" lean-forward="false" selection-start-line="214" selection-start-column="20" selection-end-line="214" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/index/common/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="29" selection-end-column="7" />
+          <folding>
+            <marker date="1508320245585" expanded="true" signature="2721:2741" ph="..." />
+            <marker date="1508320245585" expanded="true" signature="2832:2846" ph="..." />
+            <marker date="1508320245585" expanded="true" signature="2885:2899" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/admin/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/safe/update_pass.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="77" column="60" lean-forward="true" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#1881#1887#0" expanded="true" />
+            <element signature="e#1887#1893#0" expanded="true" />
+            <element signature="e#1893#1899#0" expanded="true" />
+            <element signature="e#1899#1905#0" expanded="true" />
+            <element signature="e#2194#2200#1" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1508321786753" expanded="false" signature="5542:5548" ph=" " />
+          </folding>
         </state>
       </provider>
     </entry>
