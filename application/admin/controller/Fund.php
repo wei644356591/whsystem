@@ -52,6 +52,7 @@ class Fund extends Base {
         $zd_money = $this->request->post('zd_money');
         $zg_money = $this->request->post('zg_money');
         $sx_money = $this->request->post('sx_money');
+        $fd_money = $this->request->post('fd_money');
         $data = array();
         if ($zd_money || $zg_money == 0) {
             $data['zd_money'] = $zd_money;
@@ -61,6 +62,9 @@ class Fund extends Base {
         }
         if ($sx_money || $sx_money == 0) {
             $data['sx_money'] = $sx_money;
+        }
+        if ($fd_money || $fd_money == 0){
+            $data['fd_money'] = $fd_money;
         }
         if (!$data) {
             $this->red_notice_page('未设置任何数据');

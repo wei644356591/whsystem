@@ -1,0 +1,4450 @@
+---------------------------------------------------------------
+[ 2017-09-27T00:09:47+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：1,195.05kb] [文件加载：39]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:10:25+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.068004s][吞吐率：14.70req/s] [内存消耗：1,311.02kb] [文件加载：41]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '38',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '1000',
+  'zg_money' => '2000',
+  'sx_money' => '3',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'app\admin\model\Db' not found[G:\whsystem\application\admin\model\ConsumeModel.php:19]
+---------------------------------------------------------------
+[ 2017-09-27T00:11:13+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,195.14kb] [文件加载：39]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:11:20+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：1,931.05kb] [文件加载：47]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '38',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '1000',
+  'zg_money' => '2000',
+  'sx_money' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] INSERT INTO `wh_consume` (`zd_money` , `zg_money` , `sx_money`) VALUES (1000 , 2000 , 6) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:11:20+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:15:44+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：1,931.41kb] [文件加载：47]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '36',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '111',
+  'zg_money' => '222',
+  'sx_money' => '3',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] INSERT INTO `wh_consume` (`zd_money` , `zg_money` , `sx_money`) VALUES (111 , 222 , 0.003) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:15:44+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,076.98kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:16:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.075005s][吞吐率：13.33req/s] [内存消耗：1,931.45kb] [文件加载：47]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '38',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '1221',
+  'zg_money' => '3333',
+  'sx_money' => '4',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.031001s ]
+[ sql ] [ SQL ] INSERT INTO `wh_consume` (`zd_money` , `zg_money` , `sx_money`) VALUES (1221 , 3333 , 0.004) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:16:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.027001s][吞吐率：37.04req/s] [内存消耗：1,076.98kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:17:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.073004s][吞吐率：13.70req/s] [内存消耗：1,931.04kb] [文件加载：47]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '40',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '12121',
+  'zg_money' => '12121',
+  'sx_money' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] INSERT INTO `wh_consume` (`zd_money` , `zg_money` , `sx_money`) VALUES (12121 , 12121 , 6) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:17:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:23:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin/index
+[ info ] local.wh.com/admin/admin/index [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,068.44kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ G:\whsystem\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\admin\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:24:01+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.042003s][吞吐率：23.81req/s] [内存消耗：1,195.19kb] [文件加载：39]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:25:41+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,076.16kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:28:23+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/charge.html
+[ info ] local.wh.com/admin/fund/charge.html [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：1,076.20kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'charge',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->charge[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\charge.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:28:25+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,076.16kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:28:26+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.027001s][吞吐率：37.04req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:28:26+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:28:27+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:28:27+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.027001s][吞吐率：37.04req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:28:28+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:28:28+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025002s][吞吐率：40.00req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:28:28+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.030001s][吞吐率：33.33req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:28:28+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:28:33+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025002s][吞吐率：40.00req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:28:33+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:28:35+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.080005s][吞吐率：12.50req/s] [内存消耗：1,929.61kb] [文件加载：47]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '30',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '1',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] INSERT INTO `wh_consume` (`zd_money`) VALUES (1) [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:28:35+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025002s][吞吐率：40.00req/s] [内存消耗：1,076.56kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:29:00+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin/index
+[ info ] local.wh.com/admin/admin/index [运行时间：0.027002s][吞吐率：37.03req/s] [内存消耗：1,068.44kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ G:\whsystem\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\admin\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:29:03+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,076.16kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:31:52+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin/index
+[ info ] local.wh.com/admin/admin/index [运行时间：0.031001s][吞吐率：32.26req/s] [内存消耗：1,068.44kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ G:\whsystem\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\admin\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:31:54+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/charge.html
+[ info ] local.wh.com/admin/fund/charge.html [运行时间：0.030001s][吞吐率：33.33req/s] [内存消耗：1,076.20kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'charge',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->charge[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\charge.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:31:55+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,076.16kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:31:57+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:31:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:31:59+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:31:59+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:31:59+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:31:59+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.026001s][吞吐率：38.46req/s] [内存消耗：1,093.24kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:31:59+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.027002s][吞吐率：37.03req/s] [内存消耗：1,076.55kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:32:00+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:32:00+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.026001s][吞吐率：38.46req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:32:02+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin/index
+[ info ] local.wh.com/admin/admin/index [运行时间：0.029001s][吞吐率：34.48req/s] [内存消耗：1,068.76kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ G:\whsystem\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\admin\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:32:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,076.16kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:32:06+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:32:06+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.027002s][吞吐率：37.03req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:35:25+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin/index
+[ info ] local.wh.com/admin/admin/index [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,068.44kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ G:\whsystem\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\admin\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:35:27+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.038003s][吞吐率：26.31req/s] [内存消耗：1,076.16kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:35:44+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：1,931.04kb] [文件加载：47]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '36',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '111',
+  'zg_money' => '11',
+  'sx_money' => '18',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] INSERT INTO `wh_consume` (`zd_money` , `zg_money` , `sx_money`) VALUES (111 , 11 , 18) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:35:44+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,076.56kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:36:08+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：1,931.04kb] [文件加载：47]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '36',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '11',
+  'zg_money' => '116',
+  'sx_money' => '31',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] INSERT INTO `wh_consume` (`zd_money` , `zg_money` , `sx_money`) VALUES (11 , 116 , 31) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:36:08+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.024001s][吞吐率：41.67req/s] [内存消耗：1,076.56kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:38:54+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin/index
+[ info ] local.wh.com/admin/admin/index [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,068.44kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ G:\whsystem\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\admin\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:38:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,076.16kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:39:03+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.085004s][吞吐率：11.76req/s] [内存消耗：1,929.52kb] [文件加载：47]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '33',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '3434',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] INSERT INTO `wh_consume` (`zd_money`) VALUES (3434) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:39:03+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,076.56kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:39:06+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:39:06+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.024002s][吞吐率：41.66req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:39:07+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.027001s][吞吐率：37.04req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:39:07+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:39:07+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:39:07+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.027002s][吞吐率：37.03req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:39:08+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:39:08+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:39:08+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025002s][吞吐率：40.00req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:39:09+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.024002s][吞吐率：41.66req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:40:27+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/member/lists.html
+[ info ] local.wh.com/admin/member/lists.html [运行时间：0.082004s][吞吐率：12.19req/s] [内存消耗：2,020.01kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'member',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Member->lists[ G:\whsystem\application\admin\controller\Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\member\lists.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_member` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_member` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_member` LIMIT 0,20 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:40:28+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/member/lists.html
+[ info ] local.wh.com/admin/member/lists.html [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：2,020.01kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'member',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Member->lists[ G:\whsystem\application\admin\controller\Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\member\lists.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_member` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_member` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_member` LIMIT 0,20 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:40:29+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/member/lists.html
+[ info ] local.wh.com/admin/member/lists.html [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：2,020.01kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'member',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Member->lists[ G:\whsystem\application\admin\controller\Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\member\lists.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_member` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_member` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_member` LIMIT 0,20 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:40:41+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/member/lists.html
+[ info ] local.wh.com/admin/member/lists.html [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：2,020.01kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'member',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Member->lists[ G:\whsystem\application\admin\controller\Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\member\lists.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_member` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_member` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_member` LIMIT 0,20 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:40:43+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/member/lists.html
+[ info ] local.wh.com/admin/member/lists.html [运行时间：0.078004s][吞吐率：12.82req/s] [内存消耗：2,020.01kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'member',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Member->lists[ G:\whsystem\application\admin\controller\Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\member\lists.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_member` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_member` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_member` LIMIT 0,20 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:40:44+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/member/lists.html
+[ info ] local.wh.com/admin/member/lists.html [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：2,020.01kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'member',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Member->lists[ G:\whsystem\application\admin\controller\Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\member\lists.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_member` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_member` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_member` LIMIT 0,20 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:41:00+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/member/lists.html
+[ info ] local.wh.com/admin/member/lists.html [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：2,020.01kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'member',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Member->lists[ G:\whsystem\application\admin\controller\Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\member\lists.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_member` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_member` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_member` LIMIT 0,20 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:41:54+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/charge.html
+[ info ] local.wh.com/admin/fund/charge.html [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：1,076.20kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'charge',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->charge[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\charge.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:41:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,076.16kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:41:59+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.026001s][吞吐率：38.46req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:41:59+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:42:00+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:42:00+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:42:10+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.028001s][吞吐率：35.71req/s] [内存消耗：1,093.12kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:42:10+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:42:21+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.038003s][吞吐率：26.31req/s] [内存消耗：1,076.16kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:42:35+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.026001s][吞吐率：38.46req/s] [内存消耗：1,093.16kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '30',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '0',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:42:36+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:42:41+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.027002s][吞吐率：37.03req/s] [内存消耗：1,093.16kb] [文件加载：38]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '30',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '0',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:42:41+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,076.59kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:45:23+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.115007s][吞吐率：8.70req/s] [内存消耗：2,000.88kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '38',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '1111',
+  'zg_money' => '2222',
+  'sx_money' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] UPDATE `wh_consume`  SET `zd_money`=1111,`zg_money`=2222,`sx_money`=6  WHERE  `id` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:45:23+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,076.99kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:45:38+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.074004s][吞吐率：13.51req/s] [内存消耗：2,000.71kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] UPDATE `wh_consume`  SET `zd_money`=0,`zg_money`=0,`sx_money`=0  WHERE  `id` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:45:38+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,076.99kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:45:40+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：2,000.68kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] UPDATE `wh_consume`  SET `zd_money`=0,`zg_money`=0,`sx_money`=0  WHERE  `id` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:45:40+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.026001s][吞吐率：38.46req/s] [内存消耗：1,076.99kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:45:42+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：2,000.68kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] UPDATE `wh_consume`  SET `zd_money`=0,`zg_money`=0,`sx_money`=0  WHERE  `id` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:45:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,076.99kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:45:47+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.075005s][吞吐率：13.33req/s] [内存消耗：2,000.68kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] UPDATE `wh_consume`  SET `zd_money`=0,`zg_money`=0,`sx_money`=0  WHERE  `id` = 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:45:47+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,076.99kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:45:48+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：2,000.68kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.029001s ]
+[ sql ] [ SQL ] UPDATE `wh_consume`  SET `zd_money`=0,`zg_money`=0,`sx_money`=0  WHERE  `id` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:45:48+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025002s][吞吐率：40.00req/s] [内存消耗：1,076.99kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:45:51+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：2,000.68kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] UPDATE `wh_consume`  SET `zd_money`=0,`zg_money`=0,`sx_money`=0  WHERE  `id` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:45:51+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,076.99kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:46:44+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.076005s][吞吐率：13.16req/s] [内存消耗：2,000.87kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '36',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '111',
+  'zg_money' => '222',
+  'sx_money' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] UPDATE `wh_consume`  SET `zd_money`=111,`zg_money`=222,`sx_money`=6  WHERE  `id` = 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:46:44+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025002s][吞吐率：40.00req/s] [内存消耗：1,076.99kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:46:50+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.080005s][吞吐率：12.50req/s] [内存消耗：2,000.71kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] UPDATE `wh_consume`  SET `zd_money`=0,`zg_money`=0,`sx_money`=0  WHERE  `id` = 1 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:46:50+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：1,076.99kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:46:59+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.080004s][吞吐率：12.50req/s] [内存消耗：2,000.68kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'zd_money' => '',
+  'zg_money' => '',
+  'sx_money' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_consume` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] UPDATE `wh_consume`  SET `zd_money`=0,`zg_money`=0,`sx_money`=0  WHERE  `id` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-09-27T00:46:59+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,076.99kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/fund/consume.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-27T00:47:12+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/charge.html
+[ info ] local.wh.com/admin/fund/charge.html [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,076.64kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'charge',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7843389440; pgv_si=s95250432; PHPSESSID=gkfhvko1tu918ms0rt1s2q16b7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->charge[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\charge.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File

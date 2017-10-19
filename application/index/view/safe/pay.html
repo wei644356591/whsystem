@@ -329,7 +329,13 @@
                         {$account_type_list[$item.account_type]}
                     </td>
                     <td>
+                        {if $item.tx_account == 'alipay'}
+                        支付宝
+                        {elseif $item.tx_account == 'wechat'}
+                        微信
+                        {else}
                         {$item.tx_account}
+                        {/if}
                     </td>
                     <td>{$item.money}</td>
                     <td>{$item.pay_time|date='Y-m-d H:i:s',###}</td>

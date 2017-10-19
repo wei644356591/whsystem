@@ -66,7 +66,7 @@ function account_type_list() {
 
 function ct_status_list() {
     return [
-        '1' => '充值中',
+        '1' => '操作中',
         '2' => '已完成'
     ];
 }

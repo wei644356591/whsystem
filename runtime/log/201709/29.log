@@ -1,0 +1,228 @@
+---------------------------------------------------------------
+[ 2017-09-29T00:00:03+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/fund/consume.html
+[ info ] local.wh.com/admin/fund/consume.html [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,076.16kb] [文件加载：37]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'fund',
+    2 => 'consume',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7597932544; pgv_si=s3518367744; PHPSESSID=6p5fthir60prd0filj6hlbt695',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fund->consume[ G:\whsystem\application\admin\controller\Fund.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\fund\consume.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-29T00:00:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/member/auth.html
+[ info ] local.wh.com/admin/member/auth.html [运行时间：0.083004s][吞吐率：12.05req/s] [内存消耗：2,024.62kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'member',
+    2 => 'auth',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7597932544; pgv_si=s3518367744; PHPSESSID=6p5fthir60prd0filj6hlbt695',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Member->auth[ G:\whsystem\application\admin\controller\Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\member\auth.html [ array (
+  0 => 'data',
+  1 => 'status_list',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_auth` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_auth` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_auth` ORDER BY id DESC LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-09-29T00:00:20+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/member/auth.html
+[ info ] local.wh.com/admin/member/auth.html [运行时间：0.080004s][吞吐率：12.50req/s] [内存消耗：2,024.62kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'member',
+    2 => 'auth',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7597932544; pgv_si=s3518367744; PHPSESSID=6p5fthir60prd0filj6hlbt695',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Member->auth[ G:\whsystem\application\admin\controller\Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\member\auth.html [ array (
+  0 => 'data',
+  1 => 'status_list',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_auth` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_auth` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_auth` ORDER BY id DESC LIMIT 0,20 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-29T00:03:41+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/member/auth.html
+[ info ] local.wh.com/admin/member/auth.html [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：2,025.05kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'member',
+    2 => 'auth',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/member/auth.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '21',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'member_user' => '哈',
+)
+[ info ] [ RUN ] app\admin\controller\Member->auth[ G:\whsystem\application\admin\controller\Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\member\auth.html [ array (
+  0 => 'data',
+  1 => 'status_list',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_auth` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_auth` WHERE  `member_user` LIKE '%哈%' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_auth` WHERE  `member_user` LIKE '%哈%' ORDER BY id DESC LIMIT 0,20 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-09-29T00:03:44+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/member/auth.html
+[ info ] local.wh.com/admin/member/auth.html [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：2,027.21kb] [文件加载：50]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'member',
+    2 => 'auth',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nabv004t06jsn4dq1qqvvko331',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/admin/member/auth.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://local.wh.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '21',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'member_user' => '张',
+)
+[ info ] [ RUN ] app\admin\controller\Member->auth[ G:\whsystem\application\admin\controller\Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\whsystem\public/../application/admin\view\member\auth.html [ array (
+  0 => 'data',
+  1 => 'status_list',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_auth` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_auth` WHERE  `member_user` LIKE '%张%' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_auth` WHERE  `member_user` LIKE '%张%' ORDER BY id DESC LIMIT 0,20 [ RunTime:0.001000s ]

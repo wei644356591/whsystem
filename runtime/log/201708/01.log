@@ -1,0 +1,30 @@
+---------------------------------------------------------------
+[ 2017-08-01T23:10:21+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/crontab/get_cache_wh_data
+[ info ] local.wh.com/admin/crontab/get_cache_wh_data [运行时间：0.026001s][吞吐率：38.46req/s] [内存消耗：1,108.16kb] [文件加载：36]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'crontab',
+    2 => 'get_cache_wh_data',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5ob2tulke5ii7upjovk99ro63; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507555348,1507641749,1507732508,1507906052; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507906052; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507555349,1507641750,1507732513,1507906054; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507906054',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Crontab->get_cache_wh_data[ G:\whsystem\application\admin\controller\Crontab.php ]
+[ info ] [ LOG ] INIT File

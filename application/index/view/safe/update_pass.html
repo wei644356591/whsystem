@@ -1,29 +1,31 @@
 {include file="/tpl/header"}
 <style>
-    .passContent .tagContent .ybc_con li label{
-        float:inherit;
+    .passContent .tagContent .ybc_con li label {
+        float: inherit;
         padding-left: 10px;
     }
-    .error{
+
+    .error {
         color: #999;
     }
 </style>
 <script>
-    $(document).ready(function(){
-        start=document.cookie.indexOf("motip=")
-        if (start!=-1){
-            start=start + 6
-            end=start + 1
-            motip = unescape(document.cookie.substring(start,end))
-            if(motip == 1)
+    $(document).ready(function () {
+        start = document.cookie.indexOf("motip=")
+        if (start != -1) {
+            start = start + 6
+            end = start + 1
+            motip = unescape(document.cookie.substring(start, end))
+            if (motip == 1)
                 $('#phone_top_div').show();
         }
     });
-    function hidephone(){
+
+    function hidephone() {
         $('#phone_top_div').hide();
-        var d=new Date()
+        var d = new Date()
         d.setTime(d.getTime() + 7200)
-        document.cookie="motip=2;expires="+d.toUTCString()
+        document.cookie = "motip=2;expires=" + d.toUTCString()
     }
 </script>
 <div id="main">
@@ -33,139 +35,108 @@
             <h2>修改密码</h2>
             <div class="support_ybc pass_ybc">
                 <ul id="pass_change">
-                    <li class=""><a onclick="selectTag('tagContent0',this)" href="javascript:void(0)">修改密码</a> </li>
-                    <li class="selectTag"><a onclick="selectTag('tagContent1',this)" href="javascript:void(0)">修改交易密码</a></li>
+                    <li class="">
+                        <a id="member_update_login_pass" onclick="selectTag('tagContent0',this)" href="javascript:void(0)">修改密码</a>
+                    </li>
+                    <li class="selectTag">
+                        <a id="member_update_pay_pass" onclick="selectTag('tagContent1',this)" href="javascript:void(0)">修改交易密码</a>
+                    </li>
                     <div class="clear"></div>
                 </ul>
                 <div id="tagContent" class="passContent">
                     <div class="tagContent selectTag" id="tagContent0" style="display: none;">
                         <form method="post" id="signupForm" action="{:url('safe/do_update_pass')}" id="update_login_pass_form">
-                            <ul class="ybc_con"  style="margin-left: 150px;">
-                                <li><label for="password">登录密码：</label><input name="oldpwd" id="oldpwd" type="password" v-data="require"></li>
-                                <li><label for="newword">新密码：&nbsp;&nbsp;&nbsp;&nbsp;</label><input name="pwd" id="pwd" type="password" v-data="require" v-min="6"></li>
-                                <li><label for="repeat">重复密码：</label><input name="repwd" id="repwd" type="password" v-data="require" v-min="6"></li>
-                                <li><label class="buys">&nbsp;</label><input class="tijiao" value="提交"  id="update_login_pass_btn" type="button"></li>
+                            <ul class="ybc_con" style="margin-left: 150px;">
+                                <li><label for="password">登录密码：</label><input name="oldpwd" id="oldpwd" type="password">
+                                </li>
+                                <li>
+                                    <label for="newword">新密码：&nbsp;&nbsp;&nbsp;&nbsp;</label><input name="pwd" id="pwd" type="password">
+                                </li>
+                                <li><label for="repeat">重复密码：</label><input name="repwd" id="repwd" type="password">
+                                </li>
+                                <li>
+                                    <label class="buys">&nbsp;</label><input class="tijiao" value="提交" id="update_login_pass_btn" type="submit">
+                                </li>
                             </ul>
                         </form>
                     </div>
                     <div class="tagContent" id="tagContent1" style="display: block;">
+                        <script type="text/javascript" src="/static/index/home/js/tab2.js"></script>
                         <script type="text/javascript">
-                        $('#update_login_pass_btn').click(function () {
-                            var oldpwd = $('#oldpwd').val();
-                            var pwd = $('#pwd').val();
-                            var repwd = $('#repwd').val();
-                            if (!oldpwd){
-                                $('#oldpwd').v_error_tips('请输入历史密码');
-                                return false;
-
+                            //$('#member_update_login_pass').bind( "click",selectTag);
+                            var active = "{$active}";
+                            if (active == '1') {
+                                $('#member_update_login_pass')[0].click();
+                            } else {
+                                $('#member_update_pay_pass')[0].click();
                             }
-                            if (!pwd){
-                                $('#oldpwd').v_error_tips('请输入新的密码');
-                                return false;
-                            }
-                            if (!repwd){
-                                $('#oldpwd').v_error_tips('请输入新的确认密码');
-                                return false;
-                            }
-                            $.ajax({
-                                type: $('#update_login_pass_form').attr("method"),
-                                url: $('#update_login_pass_form').attr("action"),
-                                data: $('#update_login_pass_form').serialize(),
-                                dataType : 'json',
-                                beforeSend: function () {
-                                    var load = layer.load();
-                                },
-                                success: function (result) {
-                                    layer.close(load);
-                                    if (!result.status) {
-                                        if (result.error_desc == 'nologin') {
-                                            window.location.href = '/index/member/login';
-                                        }
-                                        $().wh_error_notice(result.error_desc);
-                                        return false;
-                                    }
-                                    $().wh_succ_notice(result.succ_desc, function () {
-                                        window.location.href = "{:url('safe/index')}";
-                                    });
+                            $('#update_login_pass_btn').click(function () {
+                                var oldpwd = $('#oldpwd').val();
+                                var pwd = $('#pwd').val();
+                                var repwd = $('#repwd').val();
+                                if (!oldpwd) {
+                                    $('#oldpwd').v_error_tips('请输入历史密码');
+                                    return false;
                                 }
+                                if (!pwd) {
+                                    $('#oldpwd').v_error_tips('请输入新的密码');
+                                    return false;
+                                }
+                                if (!repwd) {
+                                    $('#repwd').v_error_tips('请输入新的确认密码');
+                                    return false;
+                                }
+                                if (pwd != repwd) {
+                                    $('#repwd').v_error_tips('两次密码输入不相符');
+                                    return false;
+                                }
+                                return true;
                             });
-                        });
-
-
                         </script>
-                        <form method="post" id="PwdtradeForm" jump-url="{:url('Login/index')}"  enctype="multipart/form-data" action="{:url('User/updatePwdtrade')}">
+                        <form method="post" id="PwdtradeForm" action="{:url('safe/do_update_paypass')}">
                             <ul class="ybc_con" style=" margin-left:150px;">
-                                <li><label for="password">登录密码：</label><input name="oldpwd_b" type="password"></li>
-                                <li><label for="buypassword">交易密码：</label><input name="oldpwdtrade_b" type="password">
+                                <li>
+                                    <label for="password">登录密码：</label><input name="oldpwd_b" type="password" v-data="require">
                                 </li>
-                                <li><label for="newword">新交易密码：</label><input name="pwdtrade" id="pwdtrade" type="password"></li>
-                                <li><label for="repeat">重复交易密码：</label><input name="repwdtrade"  type="password"></li>
-                                <li><label class="buys">&nbsp;</label><input class="tijiao" value="提交" type="submit"></li>
+                                <li>
+                                    <label for="buypassword">交易密码：</label><input name="oldpwdtrade_b" type="password" v-data="require">
+                                </li>
+                                <li>
+                                    <label for="newword">新交易密码：</label><input name="pwdtrade" id="pwdtrade" type="password" v-data="require">
+                                </li>
+                                <li>
+                                    <label for="repeat">重复交易密码：</label><input name="repwdtrade" type="password" v-data="require">
+                                </li>
+                                <li>
+                                    <label class="buys">&nbsp;</label><input class="tijiao" id="update_pay_pass" value="提交" type="button">
+                                </li>
                             </ul>
                         </form>
                     </div>
                 </div>
             </div>
-             <script>
-//                  $("#PwdtradeForm").validate({
-//                      rules: {
-//                          oldpwd_b:{
-//						  required: true,
-//                              rangelength:[6,20]
-//                          },
-//                          oldpwdtrade_b:{
-//						  required: true,
-//                              rangelength:[6,20]
-//                          },
-//                          pwdtrade:{
-//						  required: true,
-//                              rangelength:[6,20]
-//                          },
-//                          repwdtrade:{
-//                              rangelength:[6,20],
-//                              equalTo: "#pwdtrade"
-//                          }
-//
-//                      },
-//                      messages: {
-//                          oldpwd_b:{
-//						   		required: "密码不能为空",
-//                              rangelength:"登录密码长度在6-20个字符之间"
-//                          },
-//                          oldpwdtrade_b:{
-//						   required: "密码不能为空",
-//                              rangelength:"交易密码长度在6-20个字符之间"
-//                          },
-//                          pwdtrade:{
-//						   required: "密码不能为空",
-//                              rangelength:"新交易密码长度在6-20个字符之间"
-//                          },
-//                          repwdtrade:{
-//                              rangelength:"新交易密码长度在6-20个字符之间",
-//                              equalTo: "两次输入不一样"
-//                          }
-//                      },
-//                      submitHandler:function(form){
-//                          ajax_submit_form(form)
-//                          return false;
-//                      },
-//                      invalidHandler: function() {  //不通过回调
-//                          return false;
-//                      }
-//                  });
-            </script>
-            <script type="text/javascript" src="/static/index/home/js/tab2.js"></script>
+            <script type="text/javascript">
+                $('#update_pay_pass').click(function () {
+                    var pwdtrade = $('input[name="pwdtrade"]').val();
+                    var repwdtrade = $('input[name="repwdtrade"]').val();
+                    if (pwdtrade != repwdtrade) {
+                        $('input[name="repwdtrade"]').v_error_tips('两次交易密码输入不相符');
+                        return false;
+                    }
+                    $('#PwdtradeForm').v_validate();
+                });
 
+            </script>
         </div>
         <div class="clear"></div>
     </div>
 </div>
-		</div>
-		<div class="clear"></div>
-	</div>
+</div>
+<div class="clear"></div>
+</div>
 </div>
 <script>
-$(".menu8").addClass("uc-current");
+    $(".menu8").addClass("uc-current");
 </script>
 {include file="/tpl/footer"}
 {include file='/tpl/msg'}

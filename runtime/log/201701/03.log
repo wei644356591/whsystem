@@ -1,0 +1,278 @@
+---------------------------------------------------------------
+[ 2017-01-03T00:00:02+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/crontab/auto_get
+[ info ] local.wh.com/admin/crontab/auto_get [运行时间：5.115293s][吞吐率：0.20req/s] [内存消耗：2,115.33kb] [文件加载：51]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'crontab',
+    2 => 'auto_get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5ob2tulke5ii7upjovk99ro63; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507555348,1507641749,1507732508,1507906052; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507906052; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507555349,1507641750,1507732513,1507906054; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507906054',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Crontab->auto_get[ G:\whsystem\application\admin\controller\Crontab.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_use` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_use` WHERE  `status` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_adjust` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_adjust` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-01-03T00:00:07+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/crontab/get_cache_wh_data/currency/AUDHKD
+[ info ] local.wh.com/admin/crontab/get_cache_wh_data/currency/AUDHKD [运行时间：0.033001s][吞吐率：30.30req/s] [内存消耗：1,201.64kb] [文件加载：40]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'crontab',
+    2 => 'get_cache_wh_data',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5ob2tulke5ii7upjovk99ro63; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507555348,1507641749,1507732508,1507906052; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507906052; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507555349,1507641750,1507732513,1507906054; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507906054',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'currency' => 'AUDHKD',
+)
+[ info ] [ RUN ] app\admin\controller\Crontab->get_cache_wh_data[ G:\whsystem\application\admin\controller\Crontab.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-01-03T00:00:56+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/crontab/auto_get
+[ info ] local.wh.com/admin/crontab/auto_get [运行时间：2.332134s][吞吐率：0.43req/s] [内存消耗：2,115.50kb] [文件加载：51]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'crontab',
+    2 => 'auto_get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5ob2tulke5ii7upjovk99ro63; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507555348,1507641749,1507732508,1507906052; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507906052; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507555349,1507641750,1507732513,1507906054; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507906054',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Crontab->auto_get[ G:\whsystem\application\admin\controller\Crontab.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_use` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_use` WHERE  `status` = 2 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_adjust` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_adjust` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-01-03T00:03:51+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/crontab/auto_get
+[ info ] local.wh.com/admin/crontab/auto_get [运行时间：1.873107s][吞吐率：0.53req/s] [内存消耗：2,115.41kb] [文件加载：51]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'crontab',
+    2 => 'auto_get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5ob2tulke5ii7upjovk99ro63; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507555348,1507641749,1507732508,1507906052; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507906052; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507555349,1507641750,1507732513,1507906054; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507906054',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Crontab->auto_get[ G:\whsystem\application\admin\controller\Crontab.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_use` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_use` WHERE  `status` = 2 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_adjust` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_adjust` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-01-03T00:03:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/crontab/get_cache_wh_data/currency/AUDHKD
+[ info ] local.wh.com/admin/crontab/get_cache_wh_data/currency/AUDHKD [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,200.64kb] [文件加载：40]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'crontab',
+    2 => 'get_cache_wh_data',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5ob2tulke5ii7upjovk99ro63; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507555348,1507641749,1507732508,1507906052; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507906052; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507555349,1507641750,1507732513,1507906054; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507906054',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'currency' => 'AUDHKD',
+)
+[ info ] [ RUN ] app\admin\controller\Crontab->get_cache_wh_data[ G:\whsystem\application\admin\controller\Crontab.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-01-03T00:03:59+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/crontab/get_cache_wh_data/currency/AUDHKD
+[ info ] local.wh.com/admin/crontab/get_cache_wh_data/currency/AUDHKD [运行时间：0.029001s][吞吐率：34.48req/s] [内存消耗：1,200.64kb] [文件加载：40]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'crontab',
+    2 => 'get_cache_wh_data',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5ob2tulke5ii7upjovk99ro63; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507555348,1507641749,1507732508,1507906052; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507906052; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507555349,1507641750,1507732513,1507906054; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507906054',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'currency' => 'AUDHKD',
+)
+[ info ] [ RUN ] app\admin\controller\Crontab->get_cache_wh_data[ G:\whsystem\application\admin\controller\Crontab.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-01-03T00:04:16+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/crontab/auto_get
+[ info ] local.wh.com/admin/crontab/auto_get [运行时间：1.603091s][吞吐率：0.62req/s] [内存消耗：2,115.41kb] [文件加载：51]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'crontab',
+    2 => 'auto_get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5ob2tulke5ii7upjovk99ro63; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507555348,1507641749,1507732508,1507906052; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507906052; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507555349,1507641750,1507732513,1507906054; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507906054',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Crontab->auto_get[ G:\whsystem\application\admin\controller\Crontab.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_use` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_use` WHERE  `status` = 2 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_adjust` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_adjust` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-01-03T00:04:18+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/crontab/get_cache_wh_data/currency/AUDHKD
+[ info ] local.wh.com/admin/crontab/get_cache_wh_data/currency/AUDHKD [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,200.80kb] [文件加载：40]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'crontab',
+    2 => 'get_cache_wh_data',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5ob2tulke5ii7upjovk99ro63; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507555348,1507641749,1507732508,1507906052; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507906052; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507555349,1507641750,1507732513,1507906054; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507906054',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'currency' => 'AUDHKD',
+)
+[ info ] [ RUN ] app\admin\controller\Crontab->get_cache_wh_data[ G:\whsystem\application\admin\controller\Crontab.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File

@@ -80,14 +80,14 @@
                     <dt>登录密码</dt>
                     <dd><p>登录{$config.title}账户时需要输入的密码</p></dd>
                     <dd>
-                        <div class="changepw"><a href="{:url('safe/update_pass')}">修改登录密码</a></div>
+                        <div class="changepw"><a href="{:url('safe/update_pass',['active'=>1])}">修改登录密码</a></div>
                     </dd>
                 </dl>
                 <dl style="background-color: rgb(255, 255, 255);">
                     <dt>交易密码</dt>
                     <dd><p>在{$config.title}进行交易时需要输入的密码</p></dd>
                     <dd>
-                        <div class="changepw"><a href="{:url('safe/update_pass')}">修改交易密码</a></div>
+                        <div class="changepw"><a href="{:url('safe/update_pass',['active'=>2])}">修改交易密码</a></div>
                     </dd>
                 </dl>
                 <!--<dl style="background-color: rgb(255, 255, 255);">

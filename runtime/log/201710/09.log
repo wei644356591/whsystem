@@ -1,0 +1,913 @@
+---------------------------------------------------------------
+[ 2017-10-09T21:22:27+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] local.wh.com/ [运行时间：0.144401s][吞吐率：6.93req/s] [内存消耗：2,302.66kb] [文件加载：58]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507286576,1507299800,1507364772,1507439726; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507286575,1507299800,1507364769,1507439724',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\whsystem\application\index\controller\Index.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/index\view\index\index.html [ array (
+  0 => 'images',
+  1 => 'config',
+  2 => 'carousel',
+  3 => 'forex',
+  4 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_bigimg` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_bigimg` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_forex` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_forex` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_forex` LIMIT 0,3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_menu` [ RunTime:0.015601s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_menu` ORDER BY `order` LIMIT 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_menucontent` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 6 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 6 LIMIT 0,3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 7 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 7 LIMIT 0,3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 8 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 8 LIMIT 0,3 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-10-09T21:22:29+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/home/js/dist/page_index.js
+[ info ] local.wh.com/static/index/home/js/dist/page_index.js [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：961.96kb] [文件加载：33]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507555348; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507555349',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'dist',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:22:29+08:00 ] 127.0.0.1 127.0.0.1 GET /Public/home/images/arr.png
+[ info ] local.wh.com/Public/home/images/arr.png [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：961.77kb] [文件加载：33]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Public',
+    1 => 'home',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507555348; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507555349',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/static/index/home/css/flexslider.css',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:37:16+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/index.html
+[ info ] local.wh.com/index/login/index.html [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：969.91kb] [文件加载：35]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507555348; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507555349',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:37:21+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/home/js/dist/page_index.js
+[ info ] local.wh.com/static/index/home/js/dist/page_index.js [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：961.98kb] [文件加载：33]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507556241; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507556241',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'dist',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:43:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/index.html
+[ info ] local.wh.com/index/login/index.html [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：969.91kb] [文件加载：35]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507556241; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507556241',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:51:07+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] local.wh.com/ [运行时间：0.175010s][吞吐率：5.71req/s] [内存消耗：2,457.67kb] [文件加载：60]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507556624; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507556624',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\whsystem\application\index\controller\Index.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/index\view\index\index.html [ array (
+  0 => 'images',
+  1 => 'config',
+  2 => 'carousel',
+  3 => 'forex',
+  4 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_bigimg` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_bigimg` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_forex` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_forex` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_forex` LIMIT 0,3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_menu` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_menu` ORDER BY `order` LIMIT 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_menucontent` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 6 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 6 LIMIT 0,3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 7 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 7 LIMIT 0,3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 8 LIMIT 0,3 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-10-09T21:51:08+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/home/js/dist/page_index.js
+[ info ] local.wh.com/static/index/home/js/dist/page_index.js [运行时间：0.041003s][吞吐率：24.39req/s] [内存消耗：962.33kb] [文件加载：33]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557068; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557068',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'dist',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:51:08+08:00 ] 127.0.0.1 127.0.0.1 GET /Public/home/images/arr.png
+[ info ] local.wh.com/Public/home/images/arr.png [运行时间：0.026001s][吞吐率：38.46req/s] [内存消耗：962.02kb] [文件加载：33]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Public',
+    1 => 'home',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557068; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557068',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/static/index/home/css/flexslider.css',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:51:09+08:00 ] 127.0.0.1 127.0.0.1 GET /index/member/login.html
+[ info ] local.wh.com/index/member/login.html [运行时间：0.172010s][吞吐率：5.81req/s] [内存消耗：2,452.28kb] [文件加载：60]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'member',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557068; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557068',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Member->login[ G:\whsystem\application\index\controller\Member.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/index\view\member\login.html [ array (
+  0 => 'images',
+  1 => 'config',
+  2 => 'carousel',
+  3 => 'forex',
+  4 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_bigimg` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_bigimg` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_forex` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_forex` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_forex` LIMIT 0,3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_menu` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_menu` ORDER BY `order` LIMIT 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_menucontent` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 6 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 6 LIMIT 0,3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 7 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 7 LIMIT 0,3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 8 LIMIT 0,3 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-10-09T21:51:09+08:00 ] 127.0.0.1 127.0.0.1 GET /images/jubi/zhuce.png
+[ info ] local.wh.com/images/jubi/zhuce.png [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：961.77kb] [文件加载：33]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'jubi',
+    2 => 'zhuce.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557068; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557070',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/static/index/home/css/jb_style.css',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:51:13+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/checkip.html
+[ info ] local.wh.com/index/login/checkip.html [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：970.23kb] [文件加载：35]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'checkip',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557068; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557070',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/index/member/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://local.wh.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'email' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:51:24+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/findpwd.html
+[ info ] local.wh.com/index/login/findpwd.html [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：970.11kb] [文件加载：35]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'findpwd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557068; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557070',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/index/member/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:51:28+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/checkip.html
+[ info ] local.wh.com/index/login/checkip.html [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：970.23kb] [文件加载：35]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'checkip',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557068; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557086',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/index/member/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://local.wh.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'email' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:51:30+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/checkip.html
+[ info ] local.wh.com/index/login/checkip.html [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：970.23kb] [文件加载：35]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'checkip',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557068; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557086',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/index/member/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://local.wh.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'email' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:51:51+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/checkip.html
+[ info ] local.wh.com/index/login/checkip.html [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：970.23kb] [文件加载：35]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'checkip',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557068; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557086',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/index/member/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://local.wh.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'email' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:52:25+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/checkip.html
+[ info ] local.wh.com/index/login/checkip.html [运行时间：0.059004s][吞吐率：16.95req/s] [内存消耗：970.23kb] [文件加载：35]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'checkip',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557068; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557086',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/index/member/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://local.wh.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'email' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:52:33+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/checkip.html
+[ info ] local.wh.com/index/login/checkip.html [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：970.23kb] [文件加载：35]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'checkip',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557068; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557086',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/index/member/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://local.wh.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'email' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:52:34+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/checkip.html
+[ info ] local.wh.com/index/login/checkip.html [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：970.23kb] [文件加载：35]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'checkip',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557068; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557086',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/index/member/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://local.wh.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'email' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:52:57+08:00 ] 127.0.0.1 127.0.0.1 GET /index/member/login.html
+[ info ] local.wh.com/index/member/login.html [运行时间：0.174010s][吞吐率：5.75req/s] [内存消耗：2,316.34kb] [文件加载：58]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'member',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557175; Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557175',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Member->login[ G:\whsystem\application\index\controller\Member.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/index\view\member\login.html [ array (
+  0 => 'images',
+  1 => 'config',
+  2 => 'carousel',
+  3 => 'forex',
+  4 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_bigimg` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_bigimg` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_forex` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_forex` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_forex` LIMIT 0,3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_menu` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_menu` ORDER BY `order` LIMIT 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_menucontent` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 6 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 6 LIMIT 0,3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 7 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 7 LIMIT 0,3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 8 LIMIT 0,3 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-10-09T21:52:57+08:00 ] 127.0.0.1 127.0.0.1 GET /images/jubi/zhuce.png
+[ info ] local.wh.com/images/jubi/zhuce.png [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：961.77kb] [文件加载：33]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'jubi',
+    2 => 'zhuce.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557175; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557177',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/static/index/home/css/jb_style.css',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:53:06+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/checkip.html
+[ info ] local.wh.com/index/login/checkip.html [运行时间：0.030001s][吞吐率：33.33req/s] [内存消耗：970.23kb] [文件加载：35]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'checkip',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557175; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557177',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.wh.com/index/member/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://local.wh.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+)
+[ info ] [ PARAM ] array (
+  'email' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:53:43+08:00 ] 127.0.0.1 127.0.0.1 GET /index/member/login.html
+[ info ] local.wh.com/index/member/login.html [运行时间：0.188011s][吞吐率：5.32req/s] [内存消耗：2,432.91kb] [文件加载：60]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'member',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557175; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557177',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Member->login[ G:\whsystem\application\index\controller\Member.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/index\view\member\login.html [ array (
+  0 => 'images',
+  1 => 'config',
+  2 => 'carousel',
+  3 => 'forex',
+  4 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_bigimg` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_bigimg` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_forex` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_forex` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_forex` LIMIT 0,3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_menu` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_menu` ORDER BY `order` LIMIT 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_menucontent` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 6 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 6 LIMIT 0,3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 7 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 7 LIMIT 0,3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 8 LIMIT 0,3 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-10-09T21:53:43+08:00 ] 127.0.0.1 127.0.0.1 GET /images/jubi/zhuce.png
+[ info ] local.wh.com/images/jubi/zhuce.png [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：962.09kb] [文件加载：33]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'jubi',
+    2 => 'zhuce.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557175; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557223',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/static/index/home/css/jb_style.css',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-09T21:53:45+08:00 ] 127.0.0.1 127.0.0.1 GET /index/member/login.html
+[ info ] local.wh.com/index/member/login.html [运行时间：0.170009s][吞吐率：5.88req/s] [内存消耗：2,300.46kb] [文件加载：58]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'member',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557175; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557223',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Member->login[ G:\whsystem\application\index\controller\Member.php ]
+[ info ] [ VIEW ] G:\whsystem\public/../application/index\view\member\login.html [ array (
+  0 => 'images',
+  1 => 'config',
+  2 => 'carousel',
+  3 => 'forex',
+  4 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=whsystem;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_bigimg` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_bigimg` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_forex` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_forex` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_forex` LIMIT 0,3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_menu` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `wh_menu` ORDER BY `order` LIMIT 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wh_menucontent` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 6 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 6 LIMIT 0,3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 7 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 7 LIMIT 0,3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wh_menucontent` WHERE  `menu_id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title` FROM `wh_menucontent` WHERE  `menu_id` = 8 LIMIT 0,3 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-10-09T21:53:46+08:00 ] 127.0.0.1 127.0.0.1 GET /images/jubi/zhuce.png
+[ info ] local.wh.com/images/jubi/zhuce.png [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：962.09kb] [文件加载：33]
+[ info ] [ LANG ] G:\whsystem\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'jubi',
+    2 => 'zhuce.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_18784dd00dc1c9774528d08ae7943072=1507299800,1507364772,1507439726,1507555349; Hm_lpvt_18784dd00dc1c9774528d08ae7943072=1507557175; Hm_lvt_0ab4db557b96d841137861e0740d1e0a=1507299800,1507364769,1507439724,1507555348; Hm_lpvt_0ab4db557b96d841137861e0740d1e0a=1507557226',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://local.wh.com/static/index/home/css/jb_style.css',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3408.400 QQBrowser/9.6.12028.400',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'local.wh.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
